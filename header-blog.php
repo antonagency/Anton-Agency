@@ -1,7 +1,7 @@
 <?php
 
  get_template_part('nav');?>
-<div class="main-nav" role="navigation">
+<!-- <div class="main-nav" role="navigation">
     <div class="container">
         <div class="row pb-3 pt-3">
             <div class="col-md-4">
@@ -13,7 +13,7 @@
 			</div>
         </div>
     </div>
-</div>
+</div> -->
 <div class="main-subnavbar">
 <div class="container">
 		<a class="navbar-brand" href="<?php echo site_url(); ?>"><img src="<?php echo esc_attr(get_option('logo-001')); ?>" alt="<?php the_title()?>"></a>
@@ -36,7 +36,7 @@
 			]);
 			?>
         </nav>
-		<?php get_search_form()?>
+		<?php get_search_form()?> 
     </div>
 </div>
 
