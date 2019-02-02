@@ -38,11 +38,16 @@ class Antonttulos_Widget extends WP_Widget {
 	public function widget( $args, $instance ) {
 		echo $args['before_widget'];
 
+		$columns = $instance['cantascolumna_number'];
+		$entry_title = $instance['ttulo_text'];
+		$entry_tagline = $instance['descripcin_textarea'];
+		$title_h = $instance['tamao16_number'];
+
 		// Output generated fields
-		echo '<p>'.$instance['ttulo_text'].'</p>';
-		echo '<p>'.$instance['descripcin_textarea'].'</p>';
-		echo '<p>'.$instance['cantascolumna_number'].'</p>';
-		echo '<p>'.$instance['tamao16_number'].'</p>';
+		echo '<div class="col-' . $columns . ' text-center mb-5">';
+			echo '<h' . $title_h . ' class="entry_title_02">' . $entry_title . '</h' . $title_h . '>';
+			echo '<p>' . $entry_tagline . '<p>';
+		echo '</div>';
 		
 		echo $args['after_widget'];
 	}
