@@ -11,7 +11,7 @@ class Ctawidget_Widget extends WP_Widget {
 	function __construct() {
 		parent::__construct(
 			'ctawidget_widget', // Base ID
-			esc_html__( 'CTA Widget', 'Anton Agency' ), // Name
+			esc_html__( 'Anton: CTA', 'Anton Agency' ), // Name
 			array( 'description' => esc_html__( 'Call To Action', 'Anton Agency' ), ) // Args
 		);
 		add_action( 'admin_footer', array( $this, 'media_fields' ) );

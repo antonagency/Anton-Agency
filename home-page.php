@@ -119,6 +119,13 @@ get_header();
                 <a href="<?php echo esc_attr(get_option('sb-104')); ?>" class="btn-blue"><?php echo esc_attr(get_option('sb-103')); ?></a>
             </div>
         </div>
+        <?php
+
+            if(is_active_sidebar('home-01')): 
+                dynamic_sidebar('home-01');
+            endif;
+
+            ?>
     </div>
 </div>
 <div class="main-content bg-blue-400">
