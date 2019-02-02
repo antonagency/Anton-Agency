@@ -231,4 +231,4 @@ require get_template_directory() . '/inc/widgets/widget-cta.php';
  * Sidebar
  */
 
-require get_template_directory() . '/inc/sidebar.php';
+require get_template_directory() . '/inc/sidebars.php';
