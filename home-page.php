@@ -93,28 +93,6 @@ get_header();
 <div class="main-content">
     <div class="container">
         <div class="row">
-            <div class="col-12 text-center mb-5">
-                <h2 class="entry_title_02"><?php echo esc_attr(get_option('sb-100')); ?></h2>
-                <p><?php echo esc_attr(get_option('sb-101')); ?></p>
-            </div>
-            <?php
-
-            $post_cant = esc_attr(get_option('sb-102'));
-            $args=array(
-                'showposts' => $post_cant,
-                );
-
-                $customPost = new WP_Query($args);       
-                    if ( $customPost->have_posts() ) :
-                        while ( $customPost->have_posts() ) : $customPost->the_post();
-
-                        get_template_part( 'template-parts/post-medium' );
-
-                    endwhile;
-                endif;
-            
-            
-            ?>
             <div class="col-12 d-flex justify-content-center">
                 <a href="<?php echo esc_attr(get_option('sb-104')); ?>" class="btn-blue"><?php echo esc_attr(get_option('sb-103')); ?></a>
             </div>

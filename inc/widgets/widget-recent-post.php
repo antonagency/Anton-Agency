@@ -32,10 +32,23 @@ class Antonartculosrecie_Widget extends WP_Widget {
 	public function widget( $args, $instance ) {
 		echo $args['before_widget'];
 
+		$post_slug = $instance['slugdelacategor_textarea'];
+		$post_colums = $instance['cantascolumna_number'];
+		$post_quantity = $instance['cantidad_number'];
+
 		// Output generated fields
-		echo '<p>'.$instance['cantidad_number'].'</p>';
-		echo '<p>'.$instance['slugdelacategor_textarea'].'</p>';
-		echo '<p>'.$instance['cantascolumna_number'].'</p>';
+            $args=array(
+                'showposts' => $post_quantity,
+                );
+
+                $customPost = new WP_Query($args);       
+                    if ( $customPost->have_posts() ) :
+                        while ( $customPost->have_posts() ) : $customPost->the_post();
+
+                        get_template_part( 'template-parts/post-medium' );
+
+                    endwhile;
+                endif;
 		
 		echo $args['after_widget'];
 	}
