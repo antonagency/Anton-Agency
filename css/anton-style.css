@@ -555,6 +555,9 @@ input[type=submit] {
 .navbar-brand img {
   height: 70px; }
 
+.logo-navbar-brand img {
+  max-height: 50px; }
+
 .main-nav {
   -webkit-box-shadow: var(--box-shadow);
   box-shadow: var(--box-shadow); }
@@ -712,7 +715,7 @@ form {
 .search__form {
   width: 100%; }
   .search__form button {
-    background: var(--blue-400);
+    background: var(--blue-300);
     border: none;
     color: #fff;
     padding: 0 15px;

@@ -4,9 +4,9 @@
 
 <div class="main-subnavbar">
 <div class="container">
-	<div class="row">
-		<div class="col">
-			<a class="navbar-brand" href="<?php echo site_url(); ?>"><img src="<?php echo esc_attr(get_option('logo-001')); ?>" alt="<?php the_title()?>"></a>
+	<div class="row d-flex align-items-center">
+		<div class="col-sm-1">
+			<a class="logo-navbar-brand" href="<?php echo site_url(); ?>"><img src="<?php echo esc_attr(get_option('logo-001')); ?>" alt="<?php the_title()?>"></a>
 		</div>
 		<div class="col">
 			<nav class="navbar navbar-expand-md navbar-light" role="navigation">

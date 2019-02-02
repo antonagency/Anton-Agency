@@ -284,6 +284,9 @@ require get_template_directory() . '/inc/author-widget.php';
 require get_template_directory() . '/inc/author-box.php';
 
 /**
- * CTA Widgets
+ * Widgets
  */
-require get_template_directory() . '/inc/cta-widget.php';
+require get_template_directory() . '/inc/widgets/widget-card.php';
+require get_template_directory() . '/inc/widgets/widget-recent-post.php';
+require get_template_directory() . '/inc/widgets/widget-title.php';
+require get_template_directory() . '/inc/widgets/widget-cta.php';
