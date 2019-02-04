@@ -37,34 +37,29 @@ get_header();
             ?>
     </div>
 </div>
-<div class="main-content bg-blue-400">
+<div class="container-fluid">
     <div class="container">
-        <div class="row">
-            <div class="col-sm-6">
-                <section class="blue-text-box">
-                    <img src="<?php echo esc_attr(get_option('sa-100')); ?>" alt="<?php the_title()?>">
-                </section>
-            </div>
-            <div class="col-sm-6 d-flex align-items-center">
-                <section class="blue-text-box">
-                    <h3><?php echo esc_attr(get_option('sa-101')); ?></h3>
-                    <h2><?php echo esc_attr(get_option('sa-102')); ?></h2>
-                    <p><?php echo esc_attr(get_option('sa-103')); ?></p>
-                    
-                    <?php
+        <?php
 
-                    $btntext = esc_attr(get_option('sa-104'));
+            if(is_active_sidebar('home-03')): 
+                dynamic_sidebar('home-03');
+            endif;
 
-                    if($btntext !=''){
-                        echo '<a href="' . esc_attr(get_option('sa-105')) . '" class="btn-orange">' . esc_attr(get_option('sa-104')) . '</a>';
-                    }
-
-                    ?>
-                </section>
-            </div>
-        </div>
+            ?>
     </div>
 </div>
+<div class="container-fluid">
+    <div class="container">
+        <?php
+
+            if(is_active_sidebar('home-04')): 
+                dynamic_sidebar('home-04');
+            endif;
+
+            ?>
+    </div>
+</div>
+
 <div class="main-content">
     <div class="container">
         <div class="row">
