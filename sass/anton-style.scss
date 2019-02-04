@@ -701,13 +701,18 @@ input[type=submit]{
     position: fixed;
     top: 0;
     width: 100%;
-    background: var(--blue-400);
+    background: #fff;
+    border-bottom: var(--border-300);
+    padding: 10px 0;
 
     .navbar-brand img {
         height: 35px;
     }
     .navbar {
         padding: 0;
+    }
+    a{
+	  color: var(--grey-400)
     }
   }
   
