@@ -183,11 +183,11 @@ function titulo_corto($after = '', $length) {
 /**
  * Theme Option.
  */
-require_once('wp_theme_settings.php'); 
+//require_once('wp_theme_settings.php'); 
 /**
  * Theme option attributes.
  */
-require get_template_directory() . '/inc/theme-option.php';
+//require get_template_directory() . '/inc/theme-option.php';
 
 /**
  * Guide Metabox

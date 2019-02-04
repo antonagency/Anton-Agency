@@ -5,7 +5,8 @@ class Antonimagecard_Widget extends WP_Widget {
 	function __construct() {
 		parent::__construct(
 			'antonimagecard_widget',
-			esc_html__( 'Anton Image Card', 'Anton Agency' )
+			esc_html__( 'Anton Image Card', 'Anton Agency' ),
+			array( 'description' => esc_html__( 'Cree bloques de textos con imágenes personalizadas', 'Anton Agency' ), ) // Args
 		);
 		add_action( 'admin_footer', array( $this, 'media_fields' ) );
 		add_action( 'customize_controls_print_footer_scripts', array( $this, 'media_fields' ) );
@@ -13,37 +14,47 @@ class Antonimagecard_Widget extends WP_Widget {
 
 	private $widget_fields = array(
 		array(
-			'label' => 'Titulo',
-			'id' => 'titulo_text',
-			'default' => 'Un titulo',
-			'type' => 'text',
-		),
-		array(
-			'label' => 'Descripcion',
-			'id' => 'descripcion_text',
-			'default' => 'Una descripcion',
-			'type' => 'text',
-		),
-		array(
 			'label' => 'Imagen',
-			'id' => 'imagen_media',
+			'id' => 'img-001',
 			'type' => 'media',
 		),
 		array(
-			'label' => 'Columna',
-			'id' => 'columna_text',
+			'label' => 'Título',
+			'id' => 'ttulo_text',
 			'type' => 'text',
+		),
+		array(
+			'label' => 'Descripción',
+			'id' => 'descripcin_text',
+			'type' => 'text',
+		),
+		array(
+			'label' => 'Columnas',
+			'id' => 'columnas_media',
+			'default' => '4',
+			'type' => 'number',
 		),
 	);
 
 	public function widget( $args, $instance ) {
 		echo $args['before_widget'];
 
+		$widget_image = $instance['img-001'];
+		$widget_title = $instance['ttulo_text'];
+		$widget_description = $instance['descripcin_text'];
+		$widget_columns = $instance['columnas_media'];
+
 		// Output generated fields
-		echo '<p>'.$instance['titulo_text'].'</p>';
-		echo '<p>'.$instance['descripcion_text'].'</p>';
-		echo '<p>'.$instance['imagen_media'].'</p>';
-		echo '<p>'.$instance['columna_text'].'</p>';
+
+		echo '<div class="col-sm-' . $widget_columns . '">';
+			echo '<div class="widget-image-card">';
+				echo '<div class="widget-image-card-header">';
+					echo '<img src="' . $widget_image . '" alt="' . $widget_title . '">';
+					echo '<h3>' . $widget_title .'</h3>';
+				echo '</div>';
+				echo '<p>' . $widget_description . '</p>';
+			echo '</div>';
+		echo '</div>';
 		
 		echo $args['after_widget'];
 	}
@@ -74,9 +85,9 @@ class Antonimagecard_Widget extends WP_Widget {
 					$('.add_media').on('click', function(){
 						_custom_media = false;
 					});
-					$('.remove-media').on('click', function(){
+					$(document).on('click', '.remove-media', function() {
 						var parent = $(this).parents('p');
-						parent.find('input[type="text"]').val('');
+						parent.find('input[type="media"]').val('').trigger('change');
 						parent.find('span').css('background-image', 'url()');
 					});
 				}
@@ -87,7 +98,11 @@ class Antonimagecard_Widget extends WP_Widget {
 	public function field_generator( $instance ) {
 		$output = '';
 		foreach ( $this->widget_fields as $widget_field ) {
-			$widget_value = ! empty( $instance[$widget_field['id']] ) ? $instance[$widget_field['id']] : esc_html__( $widget_field['default'], 'Anton Agency' );
+			$default = '';
+			if ( isset($widget_field['default']) ) {
+				$default = $widget_field['default'];
+			}
+			$widget_value = ! empty( $instance[$widget_field['id']] ) ? $instance[$widget_field['id']] : esc_html__( $default, 'Anton Agency' );
 			switch ( $widget_field['type'] ) {
 				case 'media':
 					$media_url = '';
