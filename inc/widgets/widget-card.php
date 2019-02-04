@@ -45,6 +45,10 @@ class Antonimagecard_Widget extends WP_Widget {
 		$widget_columns = $instance['columnas_media'];
 
 		// Output generated fields
+		echo '<p>'.$instance['imagen_media'].'</p>';
+		echo '<p>'.$instance['ttulo_text'].'</p>';
+		echo '<p>'.$instance['descripcin_text'].'</p>';
+		echo '<p>'.$instance['columnas_media'].'</p>';
 
 		echo '<div class="col-sm-' . $widget_columns . '">';
 			echo '<div class="widget-image-card">';
