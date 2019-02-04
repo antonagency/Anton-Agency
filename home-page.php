@@ -14,49 +14,39 @@ get_header();
         <source src="<?php echo esc_attr(get_option('sf-100')); ?>" type="video/webm" title="Agencia de Marketing Digital &amp; Diseño Creativo.">
     </video>
 </header>
-<div class="container-fluid">
-    <div class="container">
-    <?php
-
-        if(is_active_sidebar('home-01')): 
-            dynamic_sidebar('home-01');
-        endif;
-
-        ?>
-    </div>
-</div>
 
 <div class="container-fluid">
     <div class="container">
-        <?php
+        <div class="row">
+            <?php
 
-            if(is_active_sidebar('home-02')): 
-                dynamic_sidebar('home-02');
-            endif;
+            $count = 100;
+            for ($i=0; $i <=3 ; $i++) { 
+                $value1 = 'img-card-' . $count;
+                $value2 = 'img-card-' . ($count+1);
+                $value3 = 'img-card-' . ($count+2);
 
+                $showblocks = get_option($value1);
+                if($showblocks != '')
+                {
+                    
+                    
+                    echo '<div class="col-sm-4">';
+                        echo  '<div class="widget-image-card">';
+                            echo '<div class="widget-image-card-header">';
+                                echo '<img src="' . $value3 . '" alt="'. $value1 . '">';
+                            echo '</div>';
+                            echo '<p>' . $value2 . '</p>';
+                        echo '</div>';
+                    echo '</div>';
+                
+            }
+                $count = $count+3;
+
+                
             ?>
-    </div>
-</div>
-<div class="container-fluid">
-    <div class="container">
-        <?php
-
-            if(is_active_sidebar('home-03')): 
-                dynamic_sidebar('home-03');
-            endif;
-
-            ?>
-    </div>
-</div>
-<div class="container-fluid">
-    <div class="container">
-        <?php
-
-            if(is_active_sidebar('home-04')): 
-                dynamic_sidebar('home-04');
-            endif;
-
-            ?>
+            
+        </div>
     </div>
 </div>
 

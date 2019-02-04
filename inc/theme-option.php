@@ -74,7 +74,7 @@ $wpts = new wp_theme_settings(
                             array(
                                 'type' => 'text', 
                                 'label' => 'Título 01',
-                                'name' => 'tabs-100' ,
+                                'name' => 'img-card-100' ,
                                 'class' => '',
                                 'description' => '',
                                 //'tooltip' => ''
@@ -82,7 +82,7 @@ $wpts = new wp_theme_settings(
                             array(
                                 'type' => 'text', 
                                 'label' => 'Descripción 01',
-                                'name' => 'tabs-101' ,
+                                'name' => 'img-card-101' ,
                                 'class' => '',
                                 'description' => '',
                                 //'tooltip' => ''
@@ -90,7 +90,7 @@ $wpts = new wp_theme_settings(
                             array(
                                 'type' => 'file', 
                                 'label' => 'Imagen 01', 
-                                'name' => 'tabs-102',
+                                'name' => 'img-card-102',
                                 'class' => '',
                                 'preview' => false,
                                 'description' => ''
@@ -98,7 +98,7 @@ $wpts = new wp_theme_settings(
                             array(
                                 'type' => 'text', 
                                 'label' => 'Título 02',
-                                'name' => 'tabs-103' ,
+                                'name' => 'img-card-103' ,
                                 'class' => '',
                                 'description' => '',
                                 //'tooltip' => ''
@@ -106,7 +106,7 @@ $wpts = new wp_theme_settings(
                             array(
                                 'type' => 'text', 
                                 'label' => 'Descripción 02',
-                                'name' => 'tabs-104' ,
+                                'name' => 'img-card-104' ,
                                 'class' => '',
                                 'description' => '',
                                 //'tooltip' => ''
@@ -114,7 +114,7 @@ $wpts = new wp_theme_settings(
                             array(
                                 'type' => 'file', 
                                 'label' => 'Imagen 02', 
-                                'name' => 'tabs-105',
+                                'name' => 'img-card-105',
                                 'class' => '',
                                 'preview' => false,
                                 'description' => ''
@@ -122,7 +122,7 @@ $wpts = new wp_theme_settings(
                             array(
                                 'type' => 'text', 
                                 'label' => 'Título 03',
-                                'name' => 'tabs-106' ,
+                                'name' => 'img-card-106' ,
                                 'class' => '',
                                 'description' => '',
                                 //'tooltip' => ''
@@ -130,7 +130,7 @@ $wpts = new wp_theme_settings(
                             array(
                                 'type' => 'text', 
                                 'label' => 'Descripción 03',
-                                'name' => 'tabs-107' ,
+                                'name' => 'img-card-107' ,
                                 'class' => '',
                                 'description' => '',
                                 //'tooltip' => ''
@@ -138,7 +138,7 @@ $wpts = new wp_theme_settings(
                             array(
                                 'type' => 'file', 
                                 'label' => 'Imagen 03', 
-                                'name' => 'tabs-108',
+                                'name' => 'img-card-108',
                                 'class' => '',
                                 'preview' => false,
                                 'description' => ''
