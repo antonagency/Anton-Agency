@@ -32,7 +32,7 @@ class Antonimagecard_Widget extends WP_Widget {
 			'label' => 'Columnas',
 			'id' => 'columnas_media',
 			'default' => '4',
-			'type' => 'media',
+			'type' => 'number',
 		),
 	);
 
