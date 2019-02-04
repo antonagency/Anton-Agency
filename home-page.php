@@ -14,93 +14,24 @@ get_header();
         <source src="<?php echo esc_attr(get_option('sf-100')); ?>" type="video/webm" title="Agencia de Marketing Digital &amp; Diseño Creativo.">
     </video>
 </header>
-<div>
+<div class="container-fluid">
     <div class="container">
-        <div class="w-100 text-center mb-5">
-            <h2 class="entry_title_02"><?php echo esc_attr(get_option('sf-101')); ?></h2>
-            <p><?php echo esc_attr(get_option('sf-102')); ?></p>
-        </div>
-        <ul class="nav nav-tabs" id="myTab" role="tablist">
-            <li><h3>Cómo trabajamos, pues...</h3></li>
-            <li class="nav-item">
-                <a class="nav-link active" id="home-tab" data-toggle="tab" href="#tab-100" role="tab" aria-controls="tab-100" aria-selected="true"><?php echo esc_attr(get_option('tabs-100')); ?></a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" id="profile-tab" data-toggle="tab" href="#tab-200" role="tab" aria-controls="tab-200" aria-selected="false"><?php echo esc_attr(get_option('tabs-103')); ?></a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" id="contact-tab" data-toggle="tab" href="#tab-300" role="tab" aria-controls="tab-300" aria-selected="false"><?php echo esc_attr(get_option('tabs-106')); ?></a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" id="contact-tab" data-toggle="tab" href="#tab-400" role="tab" aria-controls="tab-400" aria-selected="false"><?php echo esc_attr(get_option('tabs-109')); ?></a>
-            </li>
-        </ul>
-        <div class="tab-content" id="myTabContent">
-            <div class="tab-pane fade show active" id="tab-100" role="tabpanel" aria-labelledby="home-tab">
-                <div class="row">
-                    <div class="col-md-4"><img src="<?php echo esc_attr(get_option('tabs-102')); ?>" alt="Agencia de Marketing Digital  - Santo Domingo - República Dominicana"></div>
-                    <div class="col-md-8 pt-5"><p><?php echo esc_attr(get_option('tabs-101')); ?></p></div>
-                </div>
-            </div>
-            <div class="tab-pane fade" id="tab-200" role="tabpanel" aria-labelledby="profile-tab">
-                <div class="row">
-                    <div class="col-md-4"><img src="<?php echo esc_attr(get_option('tabs-105')); ?>" alt="Agencia de Marketing Digital  - Santo Domingo - República Dominicana"></div>
-                    <div class="col-md-8 pt-5"><p><?php echo esc_attr(get_option('tabs-104')); ?></p></div>
-                </div>
-            </div>
-            <div class="tab-pane fade" id="tab-300" role="tabpanel" aria-labelledby="contact-tab">
-                <div class="row">
-                    <div class="col-md-4"><img src="<?php echo esc_attr(get_option('tabs-108')); ?>" alt="Agencia de Marketing Digital  - Santo Domingo - República Dominicana"></div>
-                    <div class="col-md-8 pt-5"><p><?php echo esc_attr(get_option('tabs-107')); ?></p></div>
-                </div>
-            </div>
-            <div class="tab-pane fade" id="tab-400" role="tabpanel" aria-labelledby="contact-tab">
-                <div class="row">
-                    <div class="col-md-4"><img src="<?php echo esc_attr(get_option('tabs-111')); ?>" alt="Agencia de Marketing Digital  - Santo Domingo - República Dominicana"></div>
-                    <div class="col-md-8 pt-5"><p><?php echo esc_attr(get_option('tabs-110')); ?></p></div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-<div class="main-content bg-grey-300">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-6">
-                <section class="section-video">
-                <?php 
+    <?php
 
-                    $videoid = esc_attr(get_option('svideo-100'));
-                        if($videoid != '')
-                        {?>
-                                <iframe width="auto" height="300" src="https://www.youtube.com/embed/<?php echo $videoid  ?>?rel=0&amp;showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        if(is_active_sidebar('home-01')): 
+            dynamic_sidebar('home-01');
+        endif;
 
-                        <?php
-                        }
-                        
-                    ?>
-                </section>
-            </div>
-            <div class="col-md-6 d-flex justify-content-center flex-column">
-                <h2 class="entry_title_02"><?php echo esc_attr(get_option('svideo-101')); ?></h2>
-                <p><?php echo esc_attr(get_option('svideo-102')); ?></p>
-                <div class="pt-3"><a href="<?php echo esc_attr(get_option('svideo-104')); ?>" class="btn-blue"><?php echo esc_attr(get_option('svideo-103')); ?></a></div>
-            </div>
-        </div>
+        ?>
     </div>
 </div>
 
-<div class="main-content">
+<div class="container-fluid">
     <div class="container">
-        <div class="row">
-            <div class="col-12 d-flex justify-content-center">
-                <a href="<?php echo esc_attr(get_option('sb-104')); ?>" class="btn-blue"><?php echo esc_attr(get_option('sb-103')); ?></a>
-            </div>
-        </div>
         <?php
 
-            if(is_active_sidebar('home-01')): 
-                dynamic_sidebar('home-01');
+            if(is_active_sidebar('home-02')): 
+                dynamic_sidebar('home-02');
             endif;
 
             ?>
