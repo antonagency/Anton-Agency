@@ -34,10 +34,10 @@ get_header();
                     echo '<div class="col-sm-4">';
                         echo  '<div class="widget-image-card">';
                             echo '<div class="widget-image-card-header">';
-                                echo '<img src="' . $value3 . '" alt="'. $value1 . '">';
-                                echo '<h3>' . $value1 . '<h3>';
+                                echo '<img src="' . esc_attr(get_option($value3)) . '" alt="'. esc_attr(get_option($value1)) . '">';
+                                echo '<h3>' . esc_attr(get_option($value1)) . '<h3>';
                             echo '</div>';
-                            echo '<p>' . $value2 . '</p>';
+                            echo '<p>' . esc_attr(get_option($value2)) . '</p>';
                         echo '</div>';
                     echo '</div>';
                 
