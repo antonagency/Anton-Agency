@@ -39,7 +39,7 @@ get_header();
                         echo  '<div class="widget-image-card">';
                             echo '<div class="widget-image-card-header">';
                                 echo '<img src="' . esc_attr(get_option($value3)) . '" alt="'. esc_attr(get_option($value1)) . '">';
-                                echo '<h3>' . esc_attr(get_option($value1)) . '<h3>';
+                                echo '<h3>' . esc_attr(get_option($value1)) . '</h3>';
                             echo '</div>';
                             echo '<p>' . esc_attr(get_option($value2)) . '</p>';
                         echo '</div>';

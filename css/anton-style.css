@@ -383,6 +383,9 @@ div#toc_container {
   margin-top: 25px;
   font-size: 20px; }
 
+.widget-image-card-header img {
+  max-width: 100%; }
+
 /*
 //////////////////////////////////////////////////////////////////////////////////////////////
                     BLOQUES DE CLIENTES HOME
