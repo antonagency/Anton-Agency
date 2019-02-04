@@ -649,6 +649,9 @@ input[type=submit]{
 
 
 }
+.dropdown-menu{
+   padding: 50px;
+}
 .dropdown-item{
     position: relative;
     padding-left: 35px;
@@ -677,7 +680,7 @@ input[type=submit]{
 .main-subnavbar{
     background: var(--blue-400);
     .nav-link{
-        color: #fff !important;
+        color: var(--blue-100) !important;
     }
 }
 .navbar-light .navbar-nav .active>.nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .show>.nav-link {
@@ -701,13 +704,18 @@ input[type=submit]{
     position: fixed;
     top: 0;
     width: 100%;
-    background: var(--blue-400);
+    background: #fff;
+    border-bottom: var(--border-300);
+    padding: 10px 0;
 
     .navbar-brand img {
         height: 35px;
     }
     .navbar {
         padding: 0;
+    }
+    a{
+	  color: var(--grey-400)
     }
   }
   

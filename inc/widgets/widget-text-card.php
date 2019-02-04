@@ -1,12 +1,13 @@
 <?php
-// Adds widget: Anton Image Card
-class Antonimagecard_Widget extends WP_Widget {
+
+// Adds widget: Anton Text Card
+class Antontextcard_Widget extends WP_Widget {
 
 	function __construct() {
 		parent::__construct(
-			'antonimagecard_widget',
-			esc_html__( 'Anton Image Card', 'Anton Agency' ),
-			array( 'description' => esc_html__( 'Cree bloques de textos con imágenes personalizadas', 'Anton Agency' ), ) // Args
+			'antontextcard_widget',
+			esc_html__( 'Anton Text Card', 'Anton Agency' ),
+			array( 'description' => esc_html__( 'Cree bloques de textos personalizados', 'Anton Agency' ), ) // Args
 		);
 		add_action( 'admin_footer', array( $this, 'media_fields' ) );
 		add_action( 'customize_controls_print_footer_scripts', array( $this, 'media_fields' ) );
@@ -34,6 +35,22 @@ class Antonimagecard_Widget extends WP_Widget {
 			'default' => '4',
 			'type' => 'media',
 		),
+		array(
+			'label' => 'BTN Text',
+			'id' => 'btntext_text',
+			'type' => 'text',
+		),
+		array(
+			'label' => 'BTN URL',
+			'id' => 'btnurl_text',
+			'type' => 'text',
+		),
+		array(
+			'label' => 'Votos',
+			'id' => 'votos_text',
+			'default' => '1,378',
+			'type' => 'text',
+		),
 	);
 
 	public function widget( $args, $instance ) {
@@ -44,6 +61,9 @@ class Antonimagecard_Widget extends WP_Widget {
 		echo '<p>'.$instance['ttulo_text'].'</p>';
 		echo '<p>'.$instance['descripcin_text'].'</p>';
 		echo '<p>'.$instance['columnas_media'].'</p>';
+		echo '<p>'.$instance['btntext_text'].'</p>';
+		echo '<p>'.$instance['btnurl_text'].'</p>';
+		echo '<p>'.$instance['votos_text'].'</p>';
 		
 		echo $args['after_widget'];
 	}
@@ -132,7 +152,7 @@ class Antonimagecard_Widget extends WP_Widget {
 	}
 }
 
-function register_antonimagecard_widget() {
-	register_widget( 'Antonimagecard_Widget' );
+function register_antontextcard_widget() {
+	register_widget( 'Antontextcard_Widget' );
 }
-add_action( 'widgets_init', 'register_antonimagecard_widget' );
+add_action( 'widgets_init', 'register_antontextcard_widget' );
