@@ -19,7 +19,7 @@ get_header();
     <div class="container">
         <div class="row">
             <div class="col-12 text-center mb-5">
-                <h2 class="entry_title_02"><?php echo esc_attr(get_option('sf-101')); ?></h2>
+                <h1 class="entry_title_02"><?php echo esc_attr(get_option('sf-101')); ?></h1>
                 <p><?php echo esc_attr(get_option('sf-102')); ?></p>
             </div>
             <?php
