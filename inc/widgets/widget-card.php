@@ -39,11 +39,22 @@ class Antonimagecard_Widget extends WP_Widget {
 	public function widget( $args, $instance ) {
 		echo $args['before_widget'];
 
+		$widget_image = $instance['imagen_media'];
+		$widget_title = $instance['ttulo_text'];
+		$widget_description = $instance['descripcin_text'];
+		$widget_columns = $instance['columnas_media'];
+
 		// Output generated fields
-		echo '<p>'.$instance['imagen_media'].'</p>';
-		echo '<p>'.$instance['ttulo_text'].'</p>';
-		echo '<p>'.$instance['descripcin_text'].'</p>';
-		echo '<p>'.$instance['columnas_media'].'</p>';
+
+		echo '<div class="col-sm-' . $widget_columns . '">';
+			echo '<div class="widget-image-card">';
+				echo '<div class="widget-image-card-header">';
+					echo '<img src="' . $widget_image . '" alt="' . $widget_title . '">';
+					echo '<h3>' . $widget_title .'</h3>';
+				echo '</div>';
+				echo '<p>' . $widget_description . '</p>';
+			echo '</div>';
+		echo '</div>';
 		
 		echo $args['after_widget'];
 	}

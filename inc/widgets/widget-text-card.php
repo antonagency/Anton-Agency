@@ -56,6 +56,8 @@ class Antontextcard_Widget extends WP_Widget {
 	public function widget( $args, $instance ) {
 		echo $args['before_widget'];
 
+		
+
 		// Output generated fields
 		echo '<p>'.$instance['imagen_media'].'</p>';
 		echo '<p>'.$instance['ttulo_text'].'</p>';
@@ -64,6 +66,9 @@ class Antontextcard_Widget extends WP_Widget {
 		echo '<p>'.$instance['btntext_text'].'</p>';
 		echo '<p>'.$instance['btnurl_text'].'</p>';
 		echo '<p>'.$instance['votos_text'].'</p>';
+
+		echo '<div class="col-sm-">';
+		echo '<div">';
 		
 		echo $args['after_widget'];
 	}
