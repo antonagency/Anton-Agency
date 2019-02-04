@@ -1,11 +1,12 @@
 <?php
-// Adds widget: Anton: Card 
-class Antoncard_Widget extends WP_Widget {
+// Adds widget: Anton Image Card
+class Antonimagecard_Widget extends WP_Widget {
 
 	function __construct() {
 		parent::__construct(
-			'antoncard_widget',
-			esc_html__( 'Anton: Card ', 'Anton Agency' )
+			'antonimagecard_widget',
+			esc_html__( 'Anton Image Card', 'Anton Agency' ),
+			array( 'description' => esc_html__( 'Cree bloques de textos con imágenes personalizadas', 'Anton Agency' ), ) // Args
 		);
 		add_action( 'admin_footer', array( $this, 'media_fields' ) );
 		add_action( 'customize_controls_print_footer_scripts', array( $this, 'media_fields' ) );
@@ -13,25 +14,25 @@ class Antoncard_Widget extends WP_Widget {
 
 	private $widget_fields = array(
 		array(
-			'label' => 'Título',
-			'id' => 'ttulo_text',
-			'type' => 'text',
-		),
-		array(
-			'label' => 'URL',
-			'id' => 'url_text',
-			'type' => 'text',
-		),
-		array(
 			'label' => 'Imagen',
 			'id' => 'imagen_media',
 			'type' => 'media',
 		),
 		array(
-			'label' => 'Color de texto',
-			'id' => 'colordetexto_text',
-			'default' => '#333',
+			'label' => 'Título',
+			'id' => 'ttulo_text',
 			'type' => 'text',
+		),
+		array(
+			'label' => 'Descripción',
+			'id' => 'descripcin_text',
+			'type' => 'text',
+		),
+		array(
+			'label' => 'Columnas',
+			'id' => 'columnas_media',
+			'default' => '4',
+			'type' => 'media',
 		),
 	);
 
@@ -39,10 +40,10 @@ class Antoncard_Widget extends WP_Widget {
 		echo $args['before_widget'];
 
 		// Output generated fields
-		echo '<p>'.$instance['ttulo_text'].'</p>';
-		echo '<p>'.$instance['url_text'].'</p>';
 		echo '<p>'.$instance['imagen_media'].'</p>';
-		echo '<p>'.$instance['colordetexto_text'].'</p>';
+		echo '<p>'.$instance['ttulo_text'].'</p>';
+		echo '<p>'.$instance['descripcin_text'].'</p>';
+		echo '<p>'.$instance['columnas_media'].'</p>';
 		
 		echo $args['after_widget'];
 	}
@@ -131,7 +132,7 @@ class Antoncard_Widget extends WP_Widget {
 	}
 }
 
-function register_antoncard_widget() {
-	register_widget( 'Antoncard_Widget' );
+function register_antonimagecard_widget() {
+	register_widget( 'Antonimagecard_Widget' );
 }
-add_action( 'widgets_init', 'register_antoncard_widget' );
+add_action( 'widgets_init', 'register_antonimagecard_widget' );
