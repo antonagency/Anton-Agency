@@ -438,10 +438,15 @@ a{
 */
 
 .widget-image-card{
-
+    padding: 25px;
 }
 .widget-image-card-header{
-    
+
+    h3{
+        margin-top: 25px;
+        font-size: 20px;
+    }
+
 }
 /*
 //////////////////////////////////////////////////////////////////////////////////////////////

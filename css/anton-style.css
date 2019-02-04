@@ -373,6 +373,18 @@ div#toc_container {
 
 /*
 //////////////////////////////////////////////////////////////////////////////////////////////
+                    WIDGETS PERSONALIZADOS
+//////////////////////////////////////////////////////////////////////////////////////////////
+*/
+.widget-image-card {
+  padding: 25px; }
+
+.widget-image-card-header h3 {
+  margin-top: 25px;
+  font-size: 20px; }
+
+/*
+//////////////////////////////////////////////////////////////////////////////////////////////
                     BLOQUES DE CLIENTES HOME
 //////////////////////////////////////////////////////////////////////////////////////////////
 */
@@ -564,6 +576,9 @@ input[type=submit] {
   .main-nav .nav-link {
     color: #fff !important; }
 
+.dropdown-menu {
+  padding: 50px; }
+
 .dropdown-item {
   position: relative;
   padding-left: 35px; }
@@ -601,7 +616,7 @@ input[type=submit] {
 .main-subnavbar {
   background: var(--blue-400); }
   .main-subnavbar .nav-link {
-    color: #fff !important; }
+    color: var(--blue-100) !important; }
 
 .navbar-light .navbar-nav .active > .nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .show > .nav-link {
   color: var(--blue-100); }
@@ -621,11 +636,15 @@ input[type=submit] {
   position: fixed;
   top: 0;
   width: 100%;
-  background: var(--blue-400); }
+  background: #fff;
+  border-bottom: var(--border-300);
+  padding: 10px 0; }
   .custom-sticky .navbar-brand img {
     height: 35px; }
   .custom-sticky .navbar {
     padding: 0; }
+  .custom-sticky a {
+    color: var(--grey-400); }
 
 /* Add some top padding to the page content to prevent sudden quick movement (as the header gets a new position at the top of the page (position:fixed and top:0) */
 .custom-sticky + .content {
