@@ -64,45 +64,7 @@ function anton_agency_widgets_init() {
     ) );
     
 	
-	
 
-// Home Sidebars
-    register_sidebar( array(
-		'name'          => esc_html__( 'Home Section 01', 'anton-agency' ),
-		'id'            => 'home-01',
-		'description'   => esc_html__( 'Agregar elementos aquí', 'anton-agency' ),
-		'before_widget' => '<div id="%1$s" class="row %2$s">',
-		'after_widget'  => '</div>',
-
-	) );
-	
-    register_sidebar( array(
-		'name'          => esc_html__( 'Home Section 02', 'anton-agency' ),
-		'id'            => 'home-02',
-		'description'   => esc_html__( 'Agregar elementos aquí', 'anton-agency' ),
-		'before_widget' => '<div id="%1$s" class="row %2$s">',
-		'after_widget'  => '</div>',
-
-	) );
-    register_sidebar( array(
-		'name'          => esc_html__( 'Home Section 03', 'anton-agency' ),
-		'id'            => 'home-03',
-		'description'   => esc_html__( 'Agregar elementos aquí', 'anton-agency' ),
-		'before_widget' => '<div id="%1$s" class="row %2$s">',
-		'after_widget'  => '</div>',
-
-	) );
-	
-    register_sidebar( array(
-		'name'          => esc_html__( 'Home Section 04', 'anton-agency' ),
-		'id'            => 'home-04',
-		'description'   => esc_html__( 'Agregar elementos aquí', 'anton-agency' ),
-		'before_widget' => '<div id="%1$s" class="row %2$s">',
-		'after_widget'  => '</div>',
-
-	) );
-
-	
 	
 
 }

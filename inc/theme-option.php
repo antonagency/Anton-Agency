@@ -38,10 +38,6 @@ $wpts = new wp_theme_settings(
                 'dashicon' => 'dashicons-admin-generic',
                 'tabFields' => array(),
                 'sections' => array(
-                    'sfeature' => array(
-                      'text' => 'Seccion destacada', 
-                      'tabFields' => array() 
-                    ),
                     'sservicios' => array(
                         'text' => 'Header', 
                         'tabFields' => array(
@@ -73,7 +69,7 @@ $wpts = new wp_theme_settings(
                         ), 
                     ),
                     'slinks' => array(
-                        'text' => 'Seccion Tabs', 
+                        'text' => 'Bloques Principales', 
                         'tabFields' => array(
                             array(
                                 'type' => 'text', 
@@ -147,175 +143,9 @@ $wpts = new wp_theme_settings(
                                 'preview' => false,
                                 'description' => ''
                             ),
-                            array(
-                                'type' => 'text', 
-                                'label' => 'Título 04',
-                                'name' => 'tabs-109' ,
-                                'class' => '',
-                                'description' => '',
-                                //'tooltip' => ''
-                            ),
-                            array(
-                                'type' => 'text', 
-                                'label' => 'Descripción 04',
-                                'name' => 'tabs-110' ,
-                                'class' => '',
-                                'description' => '',
-                                //'tooltip' => ''
-                            ),
-                            array(
-                                'type' => 'file', 
-                                'label' => 'Imagen 04', 
-                                'name' => 'tabs-111',
-                                'class' => '',
-                                'preview' => false,
-                                'description' => ''
-                            ),
                         ), 
                     ),
-                    'svideo' => array(
-                        'text' => 'Seccion video', 
-                        'tabFields' => array(
-                            array(
-                                'type' => 'text', 
-                                'label' => 'URL del video',
-                                'name' => 'svideo-100' ,
-                                'class' => '',
-                                'description' => '',
-                                //'tooltip' => ''
-                            ),
-                            array(
-                                'type' => 'text', 
-                                'label' => 'Título principal',
-                                'name' => 'svideo-101' ,
-                                'class' => '',
-                                'description' => '',
-                                //'tooltip' => ''
-                            ),
-                            array(
-                                'type' => 'text', 
-                                'label' => 'Descripción',
-                                'name' => 'svideo-102' ,
-                                'class' => '',
-                                'description' => '',
-                                //'tooltip' => ''
-                            ),
-                            array(
-                                'type' => 'text', 
-                                'label' => 'Texto del botón',
-                                'name' => 'svideo-103' ,
-                                'class' => '',
-                                'description' => 'Ej. Ver todos los artículos',
-                                //'tooltip' => ''
-                            ),
-                            array(
-                                'type' => 'text', 
-                                'label' => 'URL del botón',
-                                'name' => 'svideo-104' ,
-                                'class' => '',
-                                'description' => '',
-                                //'tooltip' => ''
-                            ),
-                        ), 
-                    ),
-                    'sblog' => array(
-                        'text' => 'Seccion blog', 
-                        'tabFields' => array(
-                            array(
-                                'type' => 'text', 
-                                'label' => 'Título principal',
-                                'name' => 'sb-100' ,
-                                'class' => '',
-                                'description' => '',
-                                //'tooltip' => ''
-                            ),
-                            array(
-                                'type' => 'text', 
-                                'label' => 'Descripción',
-                                'name' => 'sb-101' ,
-                                'class' => '',
-                                'description' => '',
-                                //'tooltip' => ''
-                            ),
-                            array(
-                                'type' => 'text', 
-                                'label' => 'Cantidad a mostrar',
-                                'name' => 'sb-102' ,
-                                'class' => '',
-                                'description' => '',
-                                //'tooltip' => ''
-                            ),
-                            array(
-                                'type' => 'text', 
-                                'label' => 'Texto del botón',
-                                'name' => 'sb-103' ,
-                                'class' => '',
-                                'description' => 'Ej. Ver todos los artículos',
-                                //'tooltip' => ''
-                            ),
-                            array(
-                                'type' => 'text', 
-                                'label' => 'URL del botón',
-                                'name' => 'sb-104' ,
-                                'class' => '',
-                                'description' => '',
-                                //'tooltip' => ''
-                            ),
-                        ), 
-                    ),
-                    'sfeaturedos' => array(
-                        'text' => 'Seccion destacada azul', 
-                        'tabFields' => array(
-                            array(
-                                'type' => 'file', 
-                                'label' => 'Imagen destacada', 
-                                'name' => 'sa-100',
-                                'class' => '',
-                                'preview' => false,
-                                'description' => ''
-                            ),
-                            array(
-                                'type' => 'text', 
-                                'label' => 'Texto pequeño',
-                                'name' => 'sa-101' ,
-                                'class' => '',
-                                'description' => '',
-                                //'tooltip' => ''
-                            ),
-                            array(
-                                'type' => 'text', 
-                                'label' => 'Título principal',
-                                'name' => 'sa-102' ,
-                                'class' => '',
-                                'description' => '',
-                                //'tooltip' => ''
-                            ),
-                            array(
-                                'type' => 'text', 
-                                'label' => 'Descripción',
-                                'name' => 'sa-103' ,
-                                'class' => '',
-                                'description' => '',
-                                //'tooltip' => ''
-                            ),
-                            array(
-                                'type' => 'text', 
-                                'label' => 'Texto del botón',
-                                'name' => 'sa-104' ,
-                                'class' => '',
-                                'description' => '',
-                                //'tooltip' => ''
-                            ),
-                            array(
-                                'type' => 'text', 
-                                'label' => 'URL del botón',
-                                'name' => 'sa-105' ,
-                                'class' => '',
-                                'description' => '',
-                                //'tooltip' => ''
-                            ),
-                        ), 
-                    ),
+                    
                     'sclientes' => array(
                         'text' => 'Seccion clientes', 
                         'tabFields' => array(

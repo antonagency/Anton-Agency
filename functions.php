@@ -219,14 +219,7 @@ require get_template_directory() . '/inc/author-widget.php';
  */
 require get_template_directory() . '/inc/author-box.php';
 
-/**
- * Widgets
- */
-require get_template_directory() . '/inc/widgets/widget-card.php';
-require get_template_directory() . '/inc/widgets/widget-recent-post.php';
-require get_template_directory() . '/inc/widgets/widget-title.php';
-require get_template_directory() . '/inc/widgets/widget-cta.php';
-require get_template_directory() . '/inc/widgets/widget-text-card.php';
+
 
 /**
  * Sidebar
