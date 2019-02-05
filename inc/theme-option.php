@@ -145,6 +145,419 @@ $wpts = new wp_theme_settings(
                             ),
                         ), 
                     ),
+                    'servicetexts' => array(
+                        'text' => 'Bloques Principales', 
+                        'tabFields' => array(
+                            array(
+                                'type' => 'file', 
+                                'label' => 'Imagen 01', 
+                                'name' => 'service-text-100',
+                                'class' => '',
+                                'preview' => false,
+                                'description' => ''
+                            ),
+                            array(
+                                'type' => 'text', 
+                                'label' => 'Título 01',
+                                'name' => 'service-text-101' ,
+                                'class' => '',
+                                'description' => '',
+                                //'tooltip' => ''
+                            ),
+                            array(
+                                'type' => 'text', 
+                                'label' => 'Descripción 01',
+                                'name' => 'service-text-102' ,
+                                'class' => '',
+                                'description' => '',
+                                //'tooltip' => ''
+                            ),
+                            array(
+                                'type' => 'text', 
+                                'label' => 'URL 01',
+                                'name' => 'service-text-103' ,
+                                'class' => '',
+                                'description' => '',
+                                //'tooltip' => ''
+                            ),
+
+                            // Bloque
+
+                            array(
+                                'type' => 'file', 
+                                'label' => 'Imagen 02', 
+                                'name' => 'service-text-104',
+                                'class' => '',
+                                'preview' => false,
+                                'description' => ''
+                            ),
+                            array(
+                                'type' => 'text', 
+                                'label' => 'Título 02',
+                                'name' => 'service-text-105' ,
+                                'class' => '',
+                                'description' => '',
+                                //'tooltip' => ''
+                            ),
+                            array(
+                                'type' => 'text', 
+                                'label' => 'Descripción 02',
+                                'name' => 'service-text-106' ,
+                                'class' => '',
+                                'description' => '',
+                                //'tooltip' => ''
+                            ),
+                            array(
+                                'type' => 'text', 
+                                'label' => 'URL 02',
+                                'name' => 'service-text-107' ,
+                                'class' => '',
+                                'description' => '',
+                                //'tooltip' => ''
+                            ),
+                            // Bloque
+
+                            array(
+                                'type' => 'file', 
+                                'label' => 'Imagen 03', 
+                                'name' => 'service-text-108',
+                                'class' => '',
+                                'preview' => false,
+                                'description' => ''
+                            ),
+                            array(
+                                'type' => 'text', 
+                                'label' => 'Título 03',
+                                'name' => 'service-text-109' ,
+                                'class' => '',
+                                'description' => '',
+                                //'tooltip' => ''
+                            ),
+                            array(
+                                'type' => 'text', 
+                                'label' => 'Descripción 03',
+                                'name' => 'service-text-110' ,
+                                'class' => '',
+                                'description' => '',
+                                //'tooltip' => ''
+                            ),
+                            array(
+                                'type' => 'text', 
+                                'label' => 'URL 03',
+                                'name' => 'service-text-111' ,
+                                'class' => '',
+                                'description' => '',
+                                //'tooltip' => ''
+                            ),
+                            // Bloque
+
+                            array(
+                                'type' => 'file', 
+                                'label' => 'Imagen 04', 
+                                'name' => 'service-text-112',
+                                'class' => '',
+                                'preview' => false,
+                                'description' => ''
+                            ),
+                            array(
+                                'type' => 'text', 
+                                'label' => 'Título 04',
+                                'name' => 'service-text-113' ,
+                                'class' => '',
+                                'description' => '',
+                                //'tooltip' => ''
+                            ),
+                            array(
+                                'type' => 'text', 
+                                'label' => 'Descripción 04',
+                                'name' => 'service-text-114' ,
+                                'class' => '',
+                                'description' => '',
+                                //'tooltip' => ''
+                            ),
+                            array(
+                                'type' => 'text', 
+                                'label' => 'URL 04',
+                                'name' => 'service-text-115' ,
+                                'class' => '',
+                                'description' => '',
+                                //'tooltip' => ''
+                            ),
+                            // Bloque
+
+                            array(
+                                'type' => 'file', 
+                                'label' => 'Imagen 05', 
+                                'name' => 'service-text-116',
+                                'class' => '',
+                                'preview' => false,
+                                'description' => ''
+                            ),
+                            array(
+                                'type' => 'text', 
+                                'label' => 'Título 05',
+                                'name' => 'service-text-117' ,
+                                'class' => '',
+                                'description' => '',
+                                //'tooltip' => ''
+                            ),
+                            array(
+                                'type' => 'text', 
+                                'label' => 'Descripción 05',
+                                'name' => 'service-text-118' ,
+                                'class' => '',
+                                'description' => '',
+                                //'tooltip' => ''
+                            ),
+                            array(
+                                'type' => 'text', 
+                                'label' => 'URL 05',
+                                'name' => 'service-text-119' ,
+                                'class' => '',
+                                'description' => '',
+                                //'tooltip' => ''
+                            ),
+                            // Bloque
+
+                            array(
+                                'type' => 'file', 
+                                'label' => 'Imagen 06', 
+                                'name' => 'service-text-120',
+                                'class' => '',
+                                'preview' => false,
+                                'description' => ''
+                            ),
+                            array(
+                                'type' => 'text', 
+                                'label' => 'Título 06',
+                                'name' => 'service-text-121' ,
+                                'class' => '',
+                                'description' => '',
+                                //'tooltip' => ''
+                            ),
+                            array(
+                                'type' => 'text', 
+                                'label' => 'Descripción 06',
+                                'name' => 'service-text-122' ,
+                                'class' => '',
+                                'description' => '',
+                                //'tooltip' => ''
+                            ),
+                            array(
+                                'type' => 'text', 
+                                'label' => 'URL 06',
+                                'name' => 'service-text-123' ,
+                                'class' => '',
+                                'description' => '',
+                                //'tooltip' => ''
+                            ),
+                            // Bloque
+
+                            array(
+                                'type' => 'file', 
+                                'label' => 'Imagen 07', 
+                                'name' => 'service-text-124',
+                                'class' => '',
+                                'preview' => false,
+                                'description' => ''
+                            ),
+                            array(
+                                'type' => 'text', 
+                                'label' => 'Título 07',
+                                'name' => 'service-text-125' ,
+                                'class' => '',
+                                'description' => '',
+                                //'tooltip' => ''
+                            ),
+                            array(
+                                'type' => 'text', 
+                                'label' => 'Descripción 07',
+                                'name' => 'service-text-126' ,
+                                'class' => '',
+                                'description' => '',
+                                //'tooltip' => ''
+                            ),
+                            array(
+                                'type' => 'text', 
+                                'label' => 'URL 07',
+                                'name' => 'service-text-127' ,
+                                'class' => '',
+                                'description' => '',
+                                //'tooltip' => ''
+                            ),
+                            // Bloque
+
+                            array(
+                                'type' => 'file', 
+                                'label' => 'Imagen 08', 
+                                'name' => 'service-text-128',
+                                'class' => '',
+                                'preview' => false,
+                                'description' => ''
+                            ),
+                            array(
+                                'type' => 'text', 
+                                'label' => 'Título 08',
+                                'name' => 'service-text-129' ,
+                                'class' => '',
+                                'description' => '',
+                                //'tooltip' => ''
+                            ),
+                            array(
+                                'type' => 'text', 
+                                'label' => 'Descripción 08',
+                                'name' => 'service-text-130' ,
+                                'class' => '',
+                                'description' => '',
+                                //'tooltip' => ''
+                            ),
+                            array(
+                                'type' => 'text', 
+                                'label' => 'URL 08',
+                                'name' => 'service-text-131' ,
+                                'class' => '',
+                                'description' => '',
+                                //'tooltip' => ''
+                            ),
+                            // Bloque
+
+                            array(
+                                'type' => 'file', 
+                                'label' => 'Imagen 09', 
+                                'name' => 'service-text-132',
+                                'class' => '',
+                                'preview' => false,
+                                'description' => ''
+                            ),
+                            array(
+                                'type' => 'text', 
+                                'label' => 'Título 09',
+                                'name' => 'service-text-133' ,
+                                'class' => '',
+                                'description' => '',
+                                //'tooltip' => ''
+                            ),
+                            array(
+                                'type' => 'text', 
+                                'label' => 'Descripción 09',
+                                'name' => 'service-text-134' ,
+                                'class' => '',
+                                'description' => '',
+                                //'tooltip' => ''
+                            ),
+                            array(
+                                'type' => 'text', 
+                                'label' => 'URL 09',
+                                'name' => 'service-text-135' ,
+                                'class' => '',
+                                'description' => '',
+                                //'tooltip' => ''
+                            ),
+                            // Bloque
+
+                            array(
+                                'type' => 'file', 
+                                'label' => 'Imagen 10', 
+                                'name' => 'service-text-136',
+                                'class' => '',
+                                'preview' => false,
+                                'description' => ''
+                            ),
+                            array(
+                                'type' => 'text', 
+                                'label' => 'Título 10',
+                                'name' => 'service-text-137' ,
+                                'class' => '',
+                                'description' => '',
+                                //'tooltip' => ''
+                            ),
+                            array(
+                                'type' => 'text', 
+                                'label' => 'Descripción 10',
+                                'name' => 'service-text-138' ,
+                                'class' => '',
+                                'description' => '',
+                                //'tooltip' => ''
+                            ),
+                            array(
+                                'type' => 'text', 
+                                'label' => 'URL 10',
+                                'name' => 'service-text-139' ,
+                                'class' => '',
+                                'description' => '',
+                                //'tooltip' => ''
+                            ),
+                            // Bloque
+
+                            array(
+                                'type' => 'file', 
+                                'label' => 'Imagen 11', 
+                                'name' => 'service-text-140',
+                                'class' => '',
+                                'preview' => false,
+                                'description' => ''
+                            ),
+                            array(
+                                'type' => 'text', 
+                                'label' => 'Título 11',
+                                'name' => 'service-text-141' ,
+                                'class' => '',
+                                'description' => '',
+                                //'tooltip' => ''
+                            ),
+                            array(
+                                'type' => 'text', 
+                                'label' => 'Descripción 11',
+                                'name' => 'service-text-142' ,
+                                'class' => '',
+                                'description' => '',
+                                //'tooltip' => ''
+                            ),
+                            array(
+                                'type' => 'text', 
+                                'label' => 'URL 11',
+                                'name' => 'service-text-143' ,
+                                'class' => '',
+                                'description' => '',
+                                //'tooltip' => ''
+                            ),
+                            // Bloque
+
+                            array(
+                                'type' => 'file', 
+                                'label' => 'Imagen 12', 
+                                'name' => 'service-text-144',
+                                'class' => '',
+                                'preview' => false,
+                                'description' => ''
+                            ),
+                            array(
+                                'type' => 'text', 
+                                'label' => 'Título 12',
+                                'name' => 'service-text-145' ,
+                                'class' => '',
+                                'description' => '',
+                                //'tooltip' => ''
+                            ),
+                            array(
+                                'type' => 'text', 
+                                'label' => 'Descripción 12',
+                                'name' => 'service-text-146' ,
+                                'class' => '',
+                                'description' => '',
+                                //'tooltip' => ''
+                            ),
+                            array(
+                                'type' => 'text', 
+                                'label' => 'URL 12',
+                                'name' => 'service-text-147' ,
+                                'class' => '',
+                                'description' => '',
+                                //'tooltip' => ''
+                            ),
+                            
+                        ), 
+                    ),
                     
                     'sclientes' => array(
                         'text' => 'Seccion clientes', 

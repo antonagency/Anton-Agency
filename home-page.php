@@ -56,6 +56,48 @@ get_header();
         </div>
     </div>
 </div>
+<div class="container-fluid">
+    <div class="container">
+        <div class="row">
+            <?php
+
+            $count = 100;
+            for ($i=0; $i <=3 ; $i++) { 
+                $value1 = 'service-text-' . $count;
+                $value2 = 'service-text-' . ($count+1);
+                $value3 = 'service-text-' . ($count+2);
+                $value3 = 'service-text-' . ($count+3);
+
+                $showblocks = get_option($value1);
+                if($showblocks != '')
+                {
+
+                    echo '<div class="col-sm-3">';
+                        echo '<a href="' . esc_attr(get_option($value4)) . '">';
+                            echo '<div class="row">';
+                                echo '<div class="col-4">';
+                                    echo '<img src="' . esc_attr(get_option($value1))  . '" alt="' . esc_attr(get_option($value2))  . '">';
+                                echo '</div>';
+                                echo '<div class="col-8">';
+                                    echo '<h3>' . esc_attr(get_option($value2)) . '</h3>';
+                                    echo '<p>' . esc_attr(get_option($value3))  . '</p>';
+                                echo '</div>';
+                            echo '</div>';
+                        echo '</a>';
+                    echo '</div>';
+
+
+               }
+                $count = $count+4;
+
+            } 
+
+
+            ?>
+              
+        </div>
+    </div>
+</div>
 
 <div class="main-content">
     <div class="container">
