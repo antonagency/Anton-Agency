@@ -219,7 +219,11 @@ require get_template_directory() . '/inc/author-widget.php';
  */
 require get_template_directory() . '/inc/author-box.php';
 
+/**
+ * SWidget CTA
+ */
 
+require get_template_directory() . '/inc/widget-cta.php';
 
 /**
  * Sidebar
