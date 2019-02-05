@@ -66,7 +66,9 @@ h2{
         font-size: 2rem !important;
     }
 }
-h3{}
+h3{
+    font-size: 20px;
+}
 h4{}
 h5{}
 h6{}
@@ -204,11 +206,15 @@ div#toc_container {
     margin: 0;
 }
 .entry_title_03{
-    color: var(--grey-400);
+    color: #333;
     font-size: 20px;
-    font-weight: 400;
+    font-weight: 500;
 }
+.entry_title_04{
+    color: #333;
+    font-size: 16px;
 
+}
 .post-grid{
     background: #fff;
     border-radius: 8px;

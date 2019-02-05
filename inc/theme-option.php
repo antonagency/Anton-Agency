@@ -146,8 +146,24 @@ $wpts = new wp_theme_settings(
                         ), 
                     ),
                     'servicetexts' => array(
-                        'text' => 'Bloques Principales', 
+                        'text' => 'Bloques de Texto', 
                         'tabFields' => array(
+                            array(
+                                'type' => 'text', 
+                                'label' => 'Título', 
+                                'name' => 'service-text-Title',
+                                'class' => '',
+                                'preview' => false,
+                                'description' => ''
+                            ),
+                            array(
+                                'type' => 'text', 
+                                'label' => 'Descripción', 
+                                'name' => 'service-text-desc',
+                                'class' => '',
+                                'preview' => false,
+                                'description' => ''
+                            ),
                             array(
                                 'type' => 'file', 
                                 'label' => 'Imagen 01', 
