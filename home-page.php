@@ -20,7 +20,7 @@ get_header();
         <div class="row">
             <div class="col-12 text-center mb-5">
                 <h1 class="entry_title_02"><?php echo esc_attr(get_option('sf-101')); ?></h1>
-                <p><?php echo esc_attr(get_option('sf-102')); ?></p>
+                <p class="pt-3"><?php echo esc_attr(get_option('sf-102')); ?></p>
             </div>
             <?php
 
@@ -61,7 +61,7 @@ get_header();
         <div class="row">
             <div class="col-12 text-center mb-5 pt-5 pb-5">
                 <h2 class="entry_title_02"><?php echo esc_attr(get_option('service-text-Title')); ?></h2>
-                <p><?php echo esc_attr(get_option('service-text-desc')); ?></p>
+                <p class="pt-3"><?php echo esc_attr(get_option('service-text-desc')); ?></p>
             </div>
             <?php
 
@@ -108,7 +108,7 @@ get_header();
         <div class="row">
             <div class="col-12 text-center mb-5">
                 <h2 class="entry_title_02"><?php echo esc_attr(get_option('client-100')); ?></h2>
-                <p><?php echo esc_attr(get_option('client-101')); ?></p>
+                <p class="pt-3"><?php echo esc_attr(get_option('client-101')); ?></p>
             </div>
             <div class="col-sm-3">
                 <section class="clients-section">
