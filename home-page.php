@@ -102,9 +102,13 @@ get_header();
         </div>
     </div>
 </div>
-<div class="main-content">
+<div class="main-content bg-blue-400">
     <div class="container">
         <div class="row">
+            <div class="col-12 text-center mb-5">
+                <h2 class="entry_title_02"><?php echo esc_attr(get_option('client-100')); ?></h2>
+                <p class="pt-3"><?php echo esc_attr(get_option('client-101')); ?></p>
+            </div>
             <div class="col-sm-6">
             </div>
             <div class="col-sm-6">
@@ -114,64 +118,21 @@ get_header();
                             <img class="testimonial-cover" src="https://scontent-mia3-1.cdninstagram.com/vp/6aa46038c6b0f08b5fa0b510a7b3ef81/5D249386/t51.2885-19/s150x150/38244523_249349225697987_623259282896322560_n.jpg?_nc_ht=scontent-mia3-1.cdninstagram.com" alt="">
                             <cite class="testimonial">
                                 Lorem ipsum dolor sit amet consectetur, adipisicing elit. Alias perferendis magnam labore cumque, totam porro, maxime dolores a aliquid corporis ea assumenda. Architecto quasi ullam, tempore dolores facere ducimus doloribus?
+                                <small><strong>Jose Read</strong>Gerente Gneral Malta India</small>
                             </cite>
-                            <small><strong>Jose Read</strong>Gerente Gneral Malta India</small>
                         </div>
                     </div>
                 </div>
-                <div class="row">
-                    <div class="col-6 mb-5"><img src="<?php echo esc_attr(get_option('client-103')); ?>" alt="Agencia de Marketing Digital - Digital Agency Marketing"></div>
-                    <div class="col-6 mb-5"><img src="<?php echo esc_attr(get_option('client-103')); ?>" alt="Agencia de Marketing Digital - Digital Agency Marketing"></div>
-                    <div class="col-6 mb-5"><img src="<?php echo esc_attr(get_option('client-103')); ?>" alt="Agencia de Marketing Digital - Digital Agency Marketing"></div>
-                    <div class="col-6 mb-5"><img src="<?php echo esc_attr(get_option('client-103')); ?>" alt="Agencia de Marketing Digital - Digital Agency Marketing"></div>
+                <div class="row mt-5">
+                    <div class="col-6 mb-3"><img src="<?php echo esc_attr(get_option('client-102')); ?>" alt="Agencia de Marketing Digital - Digital Agency Marketing"></div>
+                    <div class="col-6 mb-3"><img src="<?php echo esc_attr(get_option('client-103')); ?>" alt="Agencia de Marketing Digital - Digital Agency Marketing"></div>
+                    <div class="col-6 mb-3"><img src="<?php echo esc_attr(get_option('client-104')); ?>" alt="Agencia de Marketing Digital - Digital Agency Marketing"></div>
+                    <div class="col-6 mb-3"><img src="<?php echo esc_attr(get_option('client-105')); ?>" alt="Agencia de Marketing Digital - Digital Agency Marketing"></div>
                 </div>
             </div>
         </div>
     </div>
 </div>
-<div class="main-content">
-    <div class="container">
-        <div class="row">
-            <div class="col-12 text-center mb-5">
-                <h2 class="entry_title_02"><?php echo esc_attr(get_option('client-100')); ?></h2>
-                <p class="pt-3"><?php echo esc_attr(get_option('client-101')); ?></p>
-            </div>
-            <div class="col-sm-3">
-                <section class="clients-section">
-                    <img src="<?php echo esc_attr(get_option('client-103')); ?>" alt="Agencia de Marketing Digital - Digital Agency Marketing">
-                </section>
-            </div>
-            <div class="col-sm-3">
-                <section class="clients-section">
-                    <?php
 
-                        $client_text = esc_attr(get_option('client-106'));
-
-                        if($client_text != ''){
-                            echo '<p>' . $client_text . '</p>';
-                            echo '<div class="client-video row">';
-                                echo '<div class="col-6"><img src="' . esc_attr(get_option('client-102')) . '" alt="Agencia de Marketing Digital - Digital Agency Marketing"></div>';
-                                echo '<div class="col-6 d-flex align-items-center"><a href="#">Ver Video</a></div>';
-                            echo '</div>';
-                        }else{
-                            echo '<img src="' . esc_attr(get_option('client-102')) . '" alt="Agencia de Marketing Digital - Digital Agency Marketing">';
-                        }
-
-                    ?>        
-                </section>
-            </div>
-            <div class="col-sm-3">
-                <section class="clients-section">
-                    <img src="<?php echo esc_attr(get_option('client-104')); ?>" alt="Agencia de Marketing Digital - Digital Agency Marketing">
-                </section>
-            </div>
-            <div class="col-sm-3">
-                <section class="clients-section">
-                    <img src="<?php echo esc_attr(get_option('client-105')); ?>" alt="Agencia de Marketing Digital - Digital Agency Marketing">
-                </section>
-            </div>
-        </div>
-    </div>
-</dive>
 <?php
 get_footer();
