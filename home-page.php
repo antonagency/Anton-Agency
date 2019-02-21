@@ -102,7 +102,33 @@ get_header();
         </div>
     </div>
 </div>
-
+<div class="main-content">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-6">
+            </div>
+            <div class="col-sm-6">
+                <div class="row">
+                    <div class="col-6">
+                        <div class="main-testimonial">
+                            <img class="testimonial-cover" src="https://scontent-mia3-1.cdninstagram.com/vp/6aa46038c6b0f08b5fa0b510a7b3ef81/5D249386/t51.2885-19/s150x150/38244523_249349225697987_623259282896322560_n.jpg?_nc_ht=scontent-mia3-1.cdninstagram.com" alt="">
+                            <cite class="testimonial">
+                                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Alias perferendis magnam labore cumque, totam porro, maxime dolores a aliquid corporis ea assumenda. Architecto quasi ullam, tempore dolores facere ducimus doloribus?
+                            </cite>
+                            <small><strong>Jose Read</strong>Gerente Gneral Malta India</small>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-6 mb-5"><img src="<?php echo esc_attr(get_option('client-103')); ?>" alt="Agencia de Marketing Digital - Digital Agency Marketing"></div>
+                    <div class="col-6 mb-5"><img src="<?php echo esc_attr(get_option('client-103')); ?>" alt="Agencia de Marketing Digital - Digital Agency Marketing"></div>
+                    <div class="col-6 mb-5"><img src="<?php echo esc_attr(get_option('client-103')); ?>" alt="Agencia de Marketing Digital - Digital Agency Marketing"></div>
+                    <div class="col-6 mb-5"><img src="<?php echo esc_attr(get_option('client-103')); ?>" alt="Agencia de Marketing Digital - Digital Agency Marketing"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 <div class="main-content">
     <div class="container">
         <div class="row">
