@@ -66,7 +66,9 @@ h2{
         font-size: 2rem !important;
     }
 }
-h3{}
+h3{
+    font-size: 20px;
+}
 h4{}
 h5{}
 h6{}
@@ -204,11 +206,15 @@ div#toc_container {
     margin: 0;
 }
 .entry_title_03{
-    color: var(--grey-400);
+    color: #333;
     font-size: 20px;
-    font-weight: 400;
+    font-weight: 500;
 }
+.entry_title_04{
+    color: #333;
+    font-size: 16px;
 
+}
 .post-grid{
     background: #fff;
     border-radius: 8px;
@@ -274,7 +280,8 @@ div#toc_container {
 
 .main-content{
     padding: 8% 15px;
-    clip-path: polygon(0 15%, 100% 0, 100% 85%, 0% 100%);
+    clip-path: polygon(0 15%, 100% 0, 100% 93%, 0% 100%);
+    margin-bottom: -88px;
 
     @media (max-width: 768px){
         clip-path: none;
@@ -453,37 +460,23 @@ a{
 }
 /*
 //////////////////////////////////////////////////////////////////////////////////////////////
-                    BLOQUES DE CLIENTES HOME
+                    BLOQUES DE TESTIMONIOS HOME
 //////////////////////////////////////////////////////////////////////////////////////////////
 */
-.clients-section{
-    box-shadow: var(--box-shadow-grey);
-    border-radius: 4px;
-    overflow: hidden;
-    text-align: center;
-    .client-video{
-        border-top: 1px solid #f2f2f2;
+.main-testimonial{
+    display: grid;
+    grid-template-columns: 1fr auto;
+    column-gap: 10px;
+    font-size: 12px;
+    .testimonial-cover{
+        max-width: 40px;
+        border-radius: 100%;
     }
-    p{
-        font-size: 12px;
-        padding: 15px;
-        text-align: justify;
-        margin-bottom: 0;
+    cite{
+        color: var(--blue-100);
     }
-    img{
-        max-width: 100%;
-    }
-    a{
-        padding: 0px 15px;
-        border: 1px solid #f2f2f2;
-        border-radius: 48px;
-        text-transform: uppercase;
-
-        &:hover{
-            background: var(--blue-400);
-            color: #fff;
-            border: none;
-        }
+    small{
+        display: block;
     }
 }
 /*
