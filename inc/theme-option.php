@@ -600,7 +600,7 @@ $wpts = new wp_theme_settings(
                                 'name' => 'client-102',
                                 'class' => '',
                                 'preview' => false,
-                                'description' => ''
+                                'description' => '',
                             ),
                             array(
                                 'type' => 'file', 
@@ -628,7 +628,7 @@ $wpts = new wp_theme_settings(
                             ),
                             array(
                                 'type' => 'text', 
-                                'label' => 'Texto Cliene Destacado',
+                                'label' => 'Texto Cliente Destacado',
                                 'name' => 'client-106' ,
                                 'class' => '',
                                 'description' => '',
@@ -638,6 +638,62 @@ $wpts = new wp_theme_settings(
                                 'type' => 'text', 
                                 'label' => 'ID del video Destacado',
                                 'name' => 'client-107' ,
+                                'class' => '',
+                                'description' => '',
+                                //'tooltip' => ''
+                            ),
+                            array(
+                                'type' => 'text', 
+                                'label' => 'Url video Youtube',
+                                'name' => 'client-118' ,
+                                'class' => '',
+                                'description' => '',
+                                //'tooltip' => ''
+                            ),
+                              array(
+                                'type' => 'file', 
+                                'label' => 'Foto Testimonio cliente 01', 
+                                'name' => 'cliente-testimonio-1',
+                                'class' => '',
+                                'preview' => false,
+                                'description' => '',
+                            ),
+                            array(
+                                'type' => 'text', 
+                                'label' => 'Testimonio 1',
+                                'name' => 'client-116' ,
+                                'class' => '',
+                                'description' => '',
+                                //'tooltip' => ''
+                            ),
+                             array(
+                                'type' => 'text', 
+                                'label' => 'Persona Testimonio 1',
+                                'name' => 'client-115' ,
+                                'class' => '',
+                                'description' => '',
+                                //'tooltip' => ''
+                            ),
+                              array(
+                                'type' => 'file', 
+                                'label' => 'Foto Testimonio  cliente 2',
+                                'name' => 'cliente-testimonio-2' ,
+                                'class' => '',
+                                'description' => '',
+                                //'tooltip' => ''
+                            ),
+                            array(
+                                'type' => 'text', 
+                                'label' => 'Testimonio 2',
+                                'name' => 'client-113' ,
+                                'class' => '',
+                                'description' => '',
+                                //'tooltip' => ''
+                            ),
+                             array(
+                                'type' => 'text', 
+                                'label' => 'Persona Testimonio 2',
+                                'name' => 'client-112' ,
                                 'class' => '',
                                 'description' => '',
                                 //'tooltip' => ''

@@ -110,16 +110,28 @@ get_header();
                 <p class="pt-3"><?php echo esc_attr(get_option('client-101')); ?></p>
             </div>
             <div class="col-sm-6">
+                <iframe width="420" height="315" src="<?php echo esc_attr(get_option('client-118')); ?>"> </iframe>
             </div>
             <div class="col-sm-6">
                 <div class="row">
-                    <div class="col-6">
+                    <div class="col-3">
                         <div class="main-testimonial">
-                            <img class="testimonial-cover" src="https://scontent-mia3-1.cdninstagram.com/vp/6aa46038c6b0f08b5fa0b510a7b3ef81/5D249386/t51.2885-19/s150x150/38244523_249349225697987_623259282896322560_n.jpg?_nc_ht=scontent-mia3-1.cdninstagram.com" alt="">
+                            <img class="testimonial-cover" src="<?php echo esc_attr(get_option('cliente-testimonio-1')); ?>" alt="">
                             <cite class="testimonial">
-                                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Alias perferendis magnam labore cumque, totam porro, maxime dolores a aliquid corporis ea assumenda. Architecto quasi ullam, tempore dolores facere ducimus doloribus?
-                                <small><strong>Jose Read</strong>Gerente Gneral Malta India</small>
+                               <?php echo esc_attr(get_option('client-116')); ?>
+                               <small><strong><?php echo esc_attr(get_option('client-115')); ?></strong></small>
                             </cite>
+
+                        </div>
+                    </div>
+                     <div class="col-3">
+                        <div class="main-testimonial">
+                            <img class="testimonial-cover" src="<?php echo esc_attr(get_option('cliente-testimonio-2')); ?>" alt="">
+                            <cite class="testimonial">
+                                 <?php echo esc_attr(get_option('client-113')); ?>
+                                <small><strong><?php echo esc_attr(get_option('client-112')); ?></strong></small>
+                            </cite>
+                            
                         </div>
                     </div>
                 </div>
