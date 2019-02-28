@@ -46,6 +46,9 @@ h2 {
     h2 {
       font-size: 2rem !important; } }
 
+h3 {
+  font-size: 20px; }
+
 ol {
   list-style: none;
   counter-reset: my-awesome-counter; }
@@ -161,9 +164,13 @@ div#toc_container {
   margin: 0; }
 
 .entry_title_03 {
-  color: var(--grey-400);
+  color: #333;
   font-size: 20px;
-  font-weight: 400; }
+  font-weight: 500; }
+
+.entry_title_04 {
+  color: #333;
+  font-size: 16px; }
 
 .post-grid {
   background: #fff;
@@ -217,8 +224,9 @@ div#toc_container {
 
 .main-content {
   padding: 8% 15px;
-  -webkit-clip-path: polygon(0 15%, 100% 0, 100% 85%, 0% 100%);
-  clip-path: polygon(0 15%, 100% 0, 100% 85%, 0% 100%); }
+  -webkit-clip-path: polygon(0 15%, 100% 0, 100% 93%, 0% 100%);
+  clip-path: polygon(0 15%, 100% 0, 100% 93%, 0% 100%);
+  margin-bottom: -88px; }
   @media (max-width: 768px) {
     .main-content {
       -webkit-clip-path: none;
@@ -388,33 +396,24 @@ div#toc_container {
 
 /*
 //////////////////////////////////////////////////////////////////////////////////////////////
-                    BLOQUES DE CLIENTES HOME
+                    BLOQUES DE TESTIMONIOS HOME
 //////////////////////////////////////////////////////////////////////////////////////////////
 */
-.clients-section {
-  -webkit-box-shadow: var(--box-shadow-grey);
-  box-shadow: var(--box-shadow-grey);
-  border-radius: 4px;
-  overflow: hidden;
-  text-align: center; }
-  .clients-section .client-video {
-    border-top: 1px solid #f2f2f2; }
-  .clients-section p {
-    font-size: 12px;
-    padding: 15px;
-    text-align: justify;
-    margin-bottom: 0; }
-  .clients-section img {
-    max-width: 100%; }
-  .clients-section a {
-    padding: 0px 15px;
-    border: 1px solid #f2f2f2;
-    border-radius: 48px;
-    text-transform: uppercase; }
-    .clients-section a:hover {
-      background: var(--blue-400);
-      color: #fff;
-      border: none; }
+.main-testimonial {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr auto;
+  grid-template-columns: 1fr auto;
+  -webkit-column-gap: 10px;
+  column-gap: 10px;
+  font-size: 12px; }
+  .main-testimonial .testimonial-cover {
+    max-width: 40px;
+    border-radius: 100%; }
+  .main-testimonial cite {
+    color: var(--blue-100); }
+  .main-testimonial small {
+    display: block; }
 
 /*
 //////////////////////////////////////////////////////////////////////////////////////////////

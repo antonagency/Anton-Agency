@@ -12,12 +12,13 @@
 ?>
 
 	</div><!-- #content -->
-	<div class="w-100 d-block d-sm-none">
-		<label class="white-btn" for="footerbtn"><img src="<?php echo get_template_directory_uri() ?>/img/marketing-digital-favicon.png" alt="<?php echo get_bloginfo( 'description' );?>"> Sobre la agencia</label>
-	</div>
-	<input type="checkbox" name="" id="footerbtn" class="d-none">
-	<footer id="footer-movil" class="site-footer">
-		<label for="footerbtn" class="top-btn d-block d-sm-none"><i class="far fa-times-circle"></i></label>
+	<button class="white-btn" onclick="getFooter()">	
+		<img src="<?php echo get_template_directory_uri() ?>/img/marketing-digital-favicon.png" alt="<?php echo get_bloginfo( 'description' );?>"> Sobre la agencia
+	</button>
+	<button id="idx"><i class="far fa-times-circle"></i></button>
+	<footer id="mainFooter" class="site-footer">
+		<!--button onclick="removeFooter()"><i class="far fa-times-circle"></i></button-->
+
 		<div class="full-width polygon bg-grey-300 d-grid">
 			<div class="grid-container">
 				<ul class="footer-social-list">
@@ -80,6 +81,13 @@
 </div><!-- #page -->
 
 <?php wp_footer(); ?>
-
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<!--script src="../js/jquery.min.js"></script-->
+<script type="text/javascript">
+	$("#idx").click(function(){
+	   $(this).attr("id","footer-movil");
+	   $('.site-footer').hide()
+	});
+  </script>
 </body>
 </html>

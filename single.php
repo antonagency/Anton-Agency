@@ -20,7 +20,6 @@ get_header('blog');
 					
 					get_template_part( 'template-parts/content-post', get_post_type() );
 					echo wpb_author_info_box();
-					the_post_navigation();
 					get_template_part( 'template-parts/guide-post', get_post_type() );
 					get_template_part( 'template-parts/related-post', get_post_type() );
 					
