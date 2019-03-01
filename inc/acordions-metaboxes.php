@@ -142,6 +142,7 @@ if (class_exists('acordionesMetabox')) {
 		  });
 		  $(".remove_acordion_button").click(function(){
 		    $(".form-table").hide();
+    		$(".remove_acordion_button").hide()
 		  });
 		});
 </script>
