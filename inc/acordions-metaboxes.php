@@ -29,51 +29,7 @@ class acordionesMetabox {
 			'id' => 'ttulodellabel_31851',
 			'type' => 'text',
 		),
-		array(
-			'label' => 'Acordión 02',
-			'id' => 'acordin12_66843',
-			'type' => 'wysiwyg',
-        ),
-        array(
-			'label' => 'Título del label',
-			'id' => 'ttulodellabel_83835',
-			'type' => 'text',
-		),
-		array(
-			'label' => 'Acordión 03',
-			'id' => 'acordin13_48261',
-			'type' => 'wysiwyg',
-        ),
-        array(
-			'label' => 'Título del label',
-			'id' => 'ttulodellabel_11719',
-			'type' => 'text',
-		),
-		array(
-			'label' => 'Acordión 04',
-			'id' => 'acordin14_10542',
-			'type' => 'wysiwyg',
-        ),
-        array(
-			'label' => 'Título del label',
-			'id' => 'ttulodellabel_62499',
-			'type' => 'text',
-		),
-		array(
-			'label' => 'Acordión 05',
-			'id' => 'acordin15_73270',
-			'type' => 'wysiwyg',
-        ),
-        array(
-			'label' => 'Título del label',
-			'id' => 'ttulodellabel_73444',
-			'type' => 'text',
-		),
-		array(
-			'label' => 'Acordión 06',
-			'id' => 'acordin16_16046',
-			'type' => 'wysiwyg',
-		),
+		
 		
 		
 		
@@ -100,10 +56,12 @@ class acordionesMetabox {
 	public function meta_box_callback( $post ) {
 		wp_nonce_field( 'acordiones_data', 'acordiones_nonce' );
 		echo 'Aquí puede colocar información referente a preguntas frecuentes y relacionados.';
+		echo ' <a class="add_acordion_button button-secondary">Add Acordion</a>';
 		$this->field_generator( $post );
 	}
 	public function field_generator( $post ) {
 		$output = '';
+		echo ' <br/><a class="remove_acordion_button button-secondary">Remove Acordion</a>';
 		foreach ( $this->meta_fields as $meta_field ) {
 			$label = '<label for="' . $meta_field['id'] . '">' . $meta_field['label'] . '</label>';
 			$meta_value = get_post_meta( $post->ID, $meta_field['id'], true );
@@ -161,3 +119,30 @@ class acordionesMetabox {
 if (class_exists('acordionesMetabox')) {
 	new acordionesMetabox;
 };
+
+?>
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+
+</body>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script type="text/javascript">
+	
+	$(document).ready(function(){
+		$(".form-table").hide()
+		$(".remove_acordion_button").hide()
+		  $(".add_acordion_button").click(function(){
+		    $(".form-table").show();
+    		$(".remove_acordion_button").show()
+		  });
+		  $(".remove_acordion_button").click(function(){
+		    $(".form-table").hide();
+		  });
+		});
+</script>
+</html>
