@@ -20,16 +20,10 @@ class acordionesMetabox {
 			'type' => 'text',
 		),
 		array(
-			'label' => 'Acordión 01',
+			'label' => 'Acordión',
 			'id' => 'acordin11_27200',
 			'type' => 'wysiwyg',
         ),
-        array(
-			'label' => 'Título del label',
-			'id' => 'ttulodellabel_31851',
-			'type' => 'text',
-		),
-		
 		
 		
 		
@@ -121,29 +115,28 @@ if (class_exists('acordionesMetabox')) {
 };
 
 ?>
-<!DOCTYPE html>
-<html>
-<head>
-	<title></title>
-</head>
-<body>
 
-</body>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script type="text/javascript">
 	
 	$(document).ready(function(){
+		var formTable = $(".form-table")
 		$(".form-table").hide()
 		$(".remove_acordion_button").hide()
 		  $(".add_acordion_button").click(function(){
-		    $(".form-table").show();
+		    formTable.show();
     		$(".remove_acordion_button").show()
+    		for (var i = 0; i < formTable.length; i++) {
+    			formTable[i] ++
+
+
+    		}
+   
 		  });
 		  $(".remove_acordion_button").click(function(){
-		    $(".form-table").hide();
+		    formTable.hide();
     		$(".remove_acordion_button").hide()
 		  });
 		});
 </script>
-</html>
