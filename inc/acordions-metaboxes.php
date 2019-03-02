@@ -25,11 +25,6 @@ class acordionesMetabox {
 			'type' => 'wysiwyg',
         ),
 		
-		
-		
-		
-		
-		
 	);
 	public function __construct() {
 		add_action( 'add_meta_boxes', array( $this, 'add_meta_boxes' ) );
@@ -113,9 +108,7 @@ class acordionesMetabox {
 if (class_exists('acordionesMetabox')) {
 	new acordionesMetabox;
 };
-
 ?>
-
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script type="text/javascript">
