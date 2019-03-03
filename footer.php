@@ -82,6 +82,5 @@
 
 <?php wp_footer(); ?>
  <script type="text/javascript" src="../wordpress/wp-content/themes/anton-agency/js/navigation.js"></script>
- <script type="text/javascript" src="../js/navigation.js"></script>
 </body>
 </html>

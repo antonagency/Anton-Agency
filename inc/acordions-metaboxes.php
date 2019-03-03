@@ -109,8 +109,8 @@ class acordionesMetabox {
 if (class_exists('acordionesMetabox')) {
 	new acordionesMetabox;
 };
-
+	wp_enqueue_script('custom-script', get_stylesheet_directory_uri() . '/js/fields_dynamic.js', array( 'jquery' ));
 ?>
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-<script type="text/javascript" src="../wp-content/themes/anton-agency/js/fields_dynamic.js"></script>
+<!--script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script-->
+<!--script type="text/javascript" src="../wp-content/themes/anton-agency/js/fields_dynamic.js"></script>
