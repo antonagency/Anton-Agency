@@ -117,26 +117,24 @@ if (class_exists('acordionesMetabox')) {
 ?>
 
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script type="text/javascript">
 	
-	$(document).ready(function(){
+	jQuery(document).ready(function(){
 		var formTable = $(".form-table")
-		$(".form-table").hide()
-		$(".remove_acordion_button").hide()
-		  $(".add_acordion_button").click(function(){
+		jQuery(".form-table").hide()
+		jQuery(".remove_acordion_button").hide()
+		  jQuery(".add_acordion_button").click(function(){
 		    formTable.show();
-    		$(".remove_acordion_button").show()
+    		jQuery(".remove_acordion_button").show()
     		for (var i = 0; i < formTable.length; i++) {
-    			formTable[i] ++
-
+    			formTable[i] 
 
     		}
    
 		  });
-		  $(".remove_acordion_button").click(function(){
+		  jQuery(".remove_acordion_button").click(function(){
 		    formTable.hide();
-    		$(".remove_acordion_button").hide()
+    		jQuery(".remove_acordion_button").hide()
 		  });
 		});
 </script>
