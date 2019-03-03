@@ -110,7 +110,7 @@ if (class_exists('acordionesMetabox')) {
 };
 ?>
 
-<script type="text/javascript">
+<!--script type="text/javascript">
 	
 	jQuery(document).ready(function(){
 		var formTable = $(".form-table")
@@ -130,4 +130,4 @@ if (class_exists('acordionesMetabox')) {
     		jQuery(".remove_acordion_button").hide()
 		  });
 		});
-</script>
+</script-->

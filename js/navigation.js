@@ -54,3 +54,10 @@ function removeFooter(){
     var removeFooter = document.getElementById('mainFooter');
     removeFooter.classList.remove('main-footer');
 }
+
+jQuery("#idx").click(function(){
+   jQuery(this).attr("id","footer-movil");
+   jQuery('.site-footer').hide()
+});
+
+

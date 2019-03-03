@@ -81,11 +81,6 @@
 </div><!-- #page -->
 
 <?php wp_footer(); ?>
-<script type="text/javascript">
-	jQuery("#idx").click(function(){
-	   jQuery(this).attr("id","footer-movil");
-	   jQuery('.site-footer').hide()
-	});
-  </script>
+ <script type="text/javascript" src="../wordpress/wp-content/themes/anton-agency/js/navigation.js"></script>
 </body>
 </html>
