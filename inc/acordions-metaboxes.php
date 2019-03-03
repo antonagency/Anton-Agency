@@ -45,12 +45,12 @@ class acordionesMetabox {
 	public function meta_box_callback( $post ) {
 		wp_nonce_field( 'acordiones_data', 'acordiones_nonce' );
 		echo 'Aquí puede colocar información referente a preguntas frecuentes y relacionados.';
-		echo ' <a class="add_acordion_button button-secondary">Add Acordion</a>';
 		$this->field_generator( $post );
 	}
+
 	public function field_generator( $post ) {
 		$output = '';
-		echo ' <br/><a class="remove_acordion_button button-secondary">Remove Acordion</a>';
+		echo '<button class="add_field button-secondary">Add fields</button>';
 		foreach ( $this->meta_fields as $meta_field ) {
 			$label = '<label for="' . $meta_field['id'] . '">' . $meta_field['label'] . '</label>';
 			$meta_value = get_post_meta( $post->ID, $meta_field['id'], true );
@@ -76,6 +76,7 @@ class acordionesMetabox {
 			$output .= $this->format_rows( $label, $input );
 		}
 		echo '<table class="form-table"><tbody>' . $output . '</tbody></table>';
+
 	}
 	public function format_rows( $label, $input ) {
 		return '<tr><th>'.$label.'</th><td>'.$input.'</td></tr>';
@@ -108,26 +109,8 @@ class acordionesMetabox {
 if (class_exists('acordionesMetabox')) {
 	new acordionesMetabox;
 };
+
 ?>
 
-<!--script type="text/javascript">
-	
-	jQuery(document).ready(function(){
-		var formTable = $(".form-table")
-		jQuery(".form-table").hide()
-		jQuery(".remove_acordion_button").hide()
-		  jQuery(".add_acordion_button").click(function(){
-		    formTable.show();
-    		jQuery(".remove_acordion_button").show()
-    		for (var i = 0; i < formTable.length; i++) {
-    			formTable[i] 
-
-    		}
-   
-		  });
-		  jQuery(".remove_acordion_button").click(function(){
-		    formTable.hide();
-    		jQuery(".remove_acordion_button").hide()
-		  });
-		});
-</script-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script type="text/javascript" src="../wp-content/themes/anton-agency/js/fields_dynamic.js"></script>
