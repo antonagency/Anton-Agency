@@ -15,7 +15,7 @@
 	<button class="white-btn" onclick="getFooter()">	
 		<img src="<?php echo get_template_directory_uri() ?>/img/marketing-digital-favicon.png" alt="<?php echo get_bloginfo( 'description' );?>"> Sobre la agencia
 	</button>
-	<button id="idx"><i class="far fa-times-circle"></i></button>
+	<button id="idx"><i class="far fa-times-circle">x</i></button>
 	<footer id="mainFooter" class="site-footer">
 		<!--button onclick="removeFooter()"><i class="far fa-times-circle"></i></button-->
 
@@ -80,7 +80,11 @@
 	</footer><!-- #colophon -->
 </div><!-- #page -->
 
-<?php wp_footer(); ?>
- <script type="text/javascript" src="../wordpress/wp-content/themes/anton-agency/js/navigation.js"></script>
+<?php wp_footer(); 
+
+	wp_enqueue_script( 'script', plugins_url('js/navigation.js', __FILE__), array('jquery'));
+
+
+?>
 </body>
 </html>

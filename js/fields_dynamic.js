@@ -18,4 +18,12 @@ jQuery(document).ready(function() {
 		jQuery(this).parent('div').remove(); 
 		x--; 
     })
+
+
+    jQuery("#idx").click(function(){
+       jQuery(this).attr("id","footer-movil");
+       jQuery('.site-footer').hide()
+    });
+
+
 });
