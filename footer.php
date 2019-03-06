@@ -15,9 +15,8 @@
 	<button class="white-btn" onclick="getFooter()">	
 		<img src="<?php echo get_template_directory_uri() ?>/img/marketing-digital-favicon.png" alt="<?php echo get_bloginfo( 'description' );?>"> Sobre la agencia
 	</button>
-	<button id="idx"><i class="far fa-times-circle">x</i></button>
 	<footer id="mainFooter" class="site-footer">
-		<!--button onclick="removeFooter()"><i class="far fa-times-circle"></i></button-->
+		<button onclick="removeFooter()"><i class="far fa-times-circle"></i></button
 
 		<div class="full-width polygon bg-grey-300 d-grid">
 			<div class="grid-container">

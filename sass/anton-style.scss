@@ -1121,7 +1121,7 @@ form{
 }
 
 @media(max-width: 600px){
-    #footer-movil{
+    .ain-footer{
         position: fixed;
         background: #fff;
         top: 0;
@@ -1157,7 +1157,7 @@ form{
           
     }
 
-    #footerbtn:checked + #footer-movil{
+    #footerbtn:checked + .main-footer{
         transform: translateX(0);
 
     }
