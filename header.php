@@ -3,7 +3,7 @@
  get_template_part('nav');?>
 
 <div class="home-nav " id="home-nav">
-	<div class="container fixed-top">
+	<div class="container">
 		<div class="row">
 			<div class="col-md-4 col-8">
 					<a class="navbar-brand" href="<?php echo site_url(); ?>"><img src="<?php echo esc_attr(get_option('logo-002')); ?>" alt="<?php the_title()?>"></a>

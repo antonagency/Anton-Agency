@@ -10,45 +10,6 @@
 //   var header = document.getElementById('home-nav');
 
 
-//   // Get the offset position of the navbar
-//   var sticky = header.offsetTop;
-
-// // Add the sticky class to the header when you reach its scroll position. Remove "sticky" when you leave the scroll position
-// function myFunction() {
-
-
-//   if (window.pageYOffset > sticky) {
-//     header.classList.add('custom-sticky');
-//   } else {
-//     header.classList.remove('custom-sticky');
-//   }
-// }
-
-
-// $(window).scroll(function() {
-//   if ($(window).scrollTop() > 50) {
-//       $('#home-nav').addClass('stuck');
-//   } else {
-//       $('#home-nav').removeClass('stuck');
-//   }
-// });
-
-/*$(document).ready(function(){
-  var scrollTop = 0;
-  $(window).scroll(function(){
-    scrollTop = $(window).scrollTop();
-     $('.counter').html(scrollTop);
-    
-    if (scrollTop >= 100) {
-      $('#home-nav').addClass('scrolled-nav');
-    } else if (scrollTop < 100) {
-      $('#home-nav').removeClass('scrolled-nav');
-    } 
-    
-  }); 
-  
-});
-*/
 
  jQuery(window).scroll(function() { 
     if (jQuery(document).scrollTop() > 50) { 
