@@ -11,35 +11,35 @@
 
 
 
- jQuery(window).scroll(function() { 
-    if (jQuery(document).scrollTop() > 50) { 
-        jQuery(".nav-index").css("background-color", "#444242"); 
-    } else {
-      jQuery(".nav-index").css("background-color", "rgba(0,0,0,0.0)"); 
-    }
-  });
-
-// //script to create sticky header 
-// jQuery(function(){
-//     createSticky(jQuery("#home-nav"));
-// });
-
-// function createSticky(sticky) {
-//     if (typeof sticky != "undefined") {
-
-//         var pos = sticky.offset().top ,
-//             win = jQuery(window);
-
-//         win.on("scroll", function() {
-
-//             if( win.scrollTop() > pos ) {
-//                 sticky.addClass("custom-sticky");
-//             } else {
-//                 sticky.removeClass("custom-sticky");
-//             }           
-//         });         
+//  jQuery(window).scroll(function() { 
+//     if (jQuery(document).scrollTop() > 50) { 
+//         jQuery(".nav-index").css("background-color", "#444242"); 
+//     } else {
+//       jQuery(".nav-index").css("background-color", "rgba(0,0,0,0.0)"); 
 //     }
-// }
+//   });
+
+//script to create sticky header 
+jQuery(function(){
+    createSticky(jQuery("#home-nav"));
+});
+
+function createSticky(sticky) {
+    if (typeof sticky != "undefined") {
+
+        var pos = sticky.offset().top ,
+            win = jQuery(window);
+
+        win.on("scroll", function() {
+
+            if( win.scrollTop() > pos ) {
+                sticky.addClass("custom-sticky");
+            } else {
+                sticky.removeClass("custom-sticky");
+            }           
+        });         
+    }
+}
 
 function getFooter(){
    var mainFooter = document.getElementById('mainFooter');
