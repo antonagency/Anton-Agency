@@ -15,26 +15,6 @@ $header = array(
     $custom['descripcin_35656'][0],
 );
 
-$acordions = array(
-    'a-label-1' =>   $custom['ttulodellabel_54887'][0],
-    'a-acordion-1' =>   $custom['acordin11_27200'][0],
-
-    'a-label-2' =>   $custom['ttulodellabel_31851'][0],
-    'a-acordion-2' =>   $custom['acordin12_66843'][0],
-
-    'a-label-3' =>   $custom['ttulodellabel_83835'][0],
-    'a-acordion-3' =>   $custom['acordin13_48261'][0],
-
-    'a-label-4' =>   $custom['ttulodellabel_11719'][0],
-    'a-acordion-4' =>   $custom['acordin14_10542'][0],
-
-    'a-label-5' =>   $custom['ttulodellabel_62499'][0],
-    'a-acordion-5' =>   $custom['acordin15_73270'][0],
-
-    'a-label-6' =>   $custom['ttulodellabel_73444'][0],
-    'a-acordion-6' =>   $custom['acordin16_16046'][0],
-);
-
 ?>
 <header class="page-header">
     <div class="container">
@@ -70,39 +50,49 @@ $acordions = array(
                     endwhile; // End of the loop.
                 ?>
                 <footer class="entry-footer pt-3">
-                    <h2 class="entry_title_02 mb-3"><?php echo $custom['ttuloprincipal_93731'][0]?></h2>
-                    <p><?php echo $custom['descripcin_12815'][0]?></p>
+                    <h2 class="entry_title_02 mb-3"><?php echo get_field('escribe_un_titulo_principal')?></h2>
+                    <p><?php echo get_field('descripcion_de_introduccion')?></p>
                     <div id="accordion" class="row entry-content">
                         <?php
 
-                        for ($i=1; $i < 7; $i++) { 
-                            $alabel = 'a-label-' . $i;
-                            $aacordion = 'a-acordion-' . $i;
-                            if($acordions[$alabel] != '')
-                            {
+                       // check if the flexible content field has rows of data
+                            if( get_field('campos_de_texto_paginas') ):
 
-                            ?>
-                                <div class="mb-3 col-12">
-                                    <div class="card main__collapse">
-                                        <div class="card-header" id="heading-<?php echo $i?>">
-                                        <h4 class="mb-0">
-                                            <button class="btn btn-link d-flex align-items-center" data-toggle="collapse" data-target="#acordion-<?php echo $i?>" aria-expanded="true" aria-controls="acordion-<?php echo $i?>">
-                                            <i class="far fa-plus-square"></i> <?php echo $acordions[$alabel];?>
-                                            </button>
-                                        </h4>
-                                        </div>
-                
-                                        <div id="acordion-<?php echo $i?>" class="collapse" aria-labelledby="heading-<?php echo $i?>" data-parent="#accordion">
-                                            <div class="card-body">
-                                                <?php echo wpautop($acordions[$aacordion]);?>
+                            $i = 1;
+
+                                // loop through the rows of data
+                            while ( has_sub_field('campos_de_texto_paginas') ) :
+
+                                    $i++;
+                                    
+
+                                    ?>
+                                        <div class="mb-3 col-12">
+                                            <div class="card main__collapse">
+                                                <div class="card-header" id="heading-<?php echo $i?>">
+                                                <h4 class="mb-0">
+                                                    <button class="btn btn-link d-flex align-items-center" data-toggle="collapse" data-target="#acordion-<?php echo $i?>" aria-expanded="true" aria-controls="acordion-<?php echo $i?>">
+                                                    <i class="far fa-plus-square"></i> <?php the_sub_field('titulo_del_bloque');?>
+                                                    </button>
+                                                </h4>
+                                                </div>
+                        
+                                                <div id="acordion-<?php echo $i?>" class="collapse" aria-labelledby="heading-<?php echo $i?>" data-parent="#accordion">
+                                                    <div class="card-body">
+                                                        <?php the_sub_field('bloque_de_texto');?>
+                                                    </div>
+                                                </div>
                                             </div>
                                         </div>
-                                    </div>
-                                </div>
-                            <?php   
-                            }
-                        }
+                            <?php 
 
+
+                            endwhile;
+                            else :
+
+                            // no layouts found
+
+                            endif;
 
                     ?>
 
@@ -116,4 +106,9 @@ $acordions = array(
 </div>
 
 <?php
+
+
+
+
+
 get_footer();
