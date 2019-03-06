@@ -7,9 +7,7 @@ $get_author_avatar = get_avatar_url($get_author_id, array('size' => 25));
 if(is_front_page()){
     $colum_number = '3';
 }
-    elseif(is_category()){
-        $colum_number = '3';
-    }
+
     elseif(is_search()){
         $colum_number = '3';
     }
@@ -19,7 +17,7 @@ if(is_front_page()){
 
 ?>
 
-<div class="col-sm-<?php echo $colum_number ?> mb-3">
+<div class="col-sm-6 col-md-<?php echo $colum_number ?> mb-3">
     <article class="post-grid">
         <div class="post-grid-header">
             <a href="<?php the_permalink();?>" class="" title="<?php the_title_attribute(); ?>">
