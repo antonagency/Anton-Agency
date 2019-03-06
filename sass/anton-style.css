@@ -327,7 +327,7 @@ div#toc_container {
 .widget-area {
   position: -webkit-sticky;
   position: sticky;
-  top: 55px;
+  top: 100px;
 }
 
 .widget-section {
@@ -733,7 +733,7 @@ input[type=submit] {
 }
 
 .navbar-blue-menu .nav-link {
-  color: #fff !important;
+  color: #fff;
 }
 
 .navbar-blue-menu .nav-item .show {
