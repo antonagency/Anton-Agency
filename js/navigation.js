@@ -33,7 +33,7 @@
 //   }
 // });
 
-$(document).ready(function(){
+/*$(document).ready(function(){
   var scrollTop = 0;
   $(window).scroll(function(){
     scrollTop = $(window).scrollTop();
@@ -48,7 +48,15 @@ $(document).ready(function(){
   }); 
   
 });
+*/
 
+ jQuery(window).scroll(function() { 
+    if (jQuery(document).scrollTop() > 50) { 
+        jQuery(".nav-index").css("background-color", "#444242"); 
+    } else {
+      jQuery(".nav-index").css("background-color", "rgba(0,0,0,0.0)"); 
+    }
+  });
 
 // //script to create sticky header 
 // jQuery(function(){

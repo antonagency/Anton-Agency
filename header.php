@@ -2,14 +2,14 @@
 
  get_template_part('nav');?>
 
-<div class="home-nav" id="home-nav">
-	<div class="container">
+<div class="home-nav " id="home-nav">
+	<div class="container fixed-top">
 		<div class="row">
 			<div class="col-md-4 col-8">
 					<a class="navbar-brand" href="<?php echo site_url(); ?>"><img src="<?php echo esc_attr(get_option('logo-002')); ?>" alt="<?php the_title()?>"></a>
 			</div>
 			<div class="col-md-8 col-4">
-				<nav class="navbar navbar-expand-md navbar-light" role="navigation">
+				<nav class="navbar navbar-expand-md navbar-light nav-index" role="navigation">
 					<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#bs4navbar" aria-controls="bs4navbar" aria-expanded="false" aria-label="Toggle navigation">
 						<span class="navbar-toggler-icon"></span>
 					</button>
