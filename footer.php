@@ -12,11 +12,11 @@
 ?>
 
 	</div><!-- #content -->
-	<button class="white-btn" onclick="getFooter()">	
+	<button class="footer-btn" onclick="getFooter()">	
 		<img src="<?php echo get_template_directory_uri() ?>/img/marketing-digital-favicon.png" alt="<?php echo get_bloginfo( 'description' );?>"> Sobre la agencia
 	</button>
 	<footer id="mainFooter" class="site-footer">
-		<button onclick="removeFooter()"><i class="far fa-times-circle"></i></button>
+		<button class="clouse-footer-btn" onclick="removeFooter()"><i class="far fa-times-circle"></i></button>
 
 		<div class="full-width polygon bg-grey-300 d-grid">
 			<div class="grid-container">
