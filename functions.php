@@ -112,12 +112,21 @@ function anton_agency_scripts() {
 	wp_enqueue_script( 'bootstrap', get_template_directory_uri() . '/js/bootstrap.min.js', array('jquery'), true );
 	wp_enqueue_script( 'navigation', get_template_directory_uri() . '/js/navigation.js', array('jquery'), true );
 	
+	
 
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
 	}
 }
 add_action( 'wp_enqueue_scripts', 'anton_agency_scripts' );
+
+
+
+function load_custom_wp_admin_script() {
+	wp_enqueue_script('fields_dynamic', get_stylesheet_directory_uri() . '/js/fields_dynamic.js', array( 'jquery' ));
+	wp_enqueue_style( 'fields_dynamic' );
+}
+add_action( 'admin_enqueue_scripts', 'load_custom_wp_admin_script' );
 
 
 function anton_agency_scripts_theme_option() {

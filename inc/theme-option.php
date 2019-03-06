@@ -637,14 +637,6 @@ $wpts = new wp_theme_settings(
                             array(
                                 'type' => 'text', 
                                 'label' => 'ID del video Destacado',
-                                'name' => 'client-107' ,
-                                'class' => '',
-                                'description' => '',
-                                //'tooltip' => ''
-                            ),
-                            array(
-                                'type' => 'text', 
-                                'label' => 'Url video Youtube',
                                 'name' => 'client-118' ,
                                 'class' => '',
                                 'description' => '',

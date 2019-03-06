@@ -110,11 +110,11 @@ get_header();
                 <p class="pt-3"><?php echo esc_attr(get_option('client-101')); ?></p>
             </div>
             <div class="col-sm-6">
-                <iframe width="420" height="315" src="<?php echo esc_attr(get_option('client-118')); ?>"> </iframe>
+                <iframe id="ytplayer" type="text/html" width="720" height="405" src="https://www.youtube.com/embed/<?php echo esc_attr(get_option('client-118')); ?>?controls=0&fs=0&loop=1&modestbranding=1" frameborder="0" allowfullscreen></iframe>
             </div>
             <div class="col-sm-6">
                 <div class="row">
-                    <div class="col-3">
+                    <div class="col-sm-6">
                         <div class="main-testimonial">
                             <img class="testimonial-cover" src="<?php echo esc_attr(get_option('cliente-testimonio-1')); ?>" alt="">
                             <cite class="testimonial">
@@ -124,7 +124,7 @@ get_header();
 
                         </div>
                     </div>
-                     <div class="col-3">
+                     <div class="col-sm-6">
                         <div class="main-testimonial">
                             <img class="testimonial-cover" src="<?php echo esc_attr(get_option('cliente-testimonio-2')); ?>" alt="">
                             <cite class="testimonial">
