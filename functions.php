@@ -98,9 +98,6 @@ add_action( 'after_setup_theme', 'anton_agency_content_width', 0 );
  */
 function anton_agency_scripts() {
 	//CSS
-
-	
-	//wp_enqueue_style( 'anton-agency-style', get_stylesheet_uri() );
 	wp_enqueue_style( 'bootstrap.min', get_stylesheet_directory_uri() . '/css/bootstrap.min.css', array(), '0.0.5' );
 	wp_enqueue_style( 'anton-style', get_stylesheet_directory_uri() . '/css/anton-style.css', array(), '0.0.5' );
 	
