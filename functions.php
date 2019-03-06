@@ -200,10 +200,7 @@ require get_template_directory() . '/inc/theme-option.php';
  */
 require get_template_directory() . '/inc/guide-metabox.php';
 
-/**
- * Acordions Metabox
- */
-require get_template_directory() . '/inc/acordions-metaboxes.php';
+
 
 /**
  * header Metabox
