@@ -73,7 +73,12 @@ h4{}
 h5{}
 h6{}
 
-
+mark{
+    background: var(--orange-400);
+    color: #fff;
+    padding: 05px 10px;
+    border-radius: 4px;
+}
 ol {
     list-style: none;
     counter-reset: my-awesome-counter;
@@ -166,21 +171,20 @@ div#toc_container {
     font-weight: 900;
 }
 
-.white-btn{
+.footer-btn{
     border-radius: 25px;
     background: #fff;
-    box-shadow: rgba(204, 204, 204, 0.45) 0px 0 45px 0px;
-
-    display: grid;
     padding: 5px 15px;
-    margin: 15px;
-    justify-content: center;
-    align-content: space-between;
-    grid-template-columns: auto auto;
-    align-items: center;
     max-width: 60%;
-
     cursor: pointer;
+    border: var(--border-300);
+    display: block;
+    text-align: center;
+    margin: 15px auto 75px;
+
+    @media (min-width: 600px){
+        display: none;
+    }
 
     a{
         color: var(--blue-400);
@@ -191,7 +195,19 @@ div#toc_container {
     }
 
 }
-
+.clouse-footer-btn{
+    border: none;
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    z-index: 99;
+    background: transparent;
+    font-size: 27px;
+    color: var(--blue-400);
+    @media (min-width: 600px){
+        display: none;
+    }
+}
 .clouse-btn{
     position: absolute;
     top: 15px;
@@ -1121,7 +1137,9 @@ form{
 }
 
 @media(max-width: 600px){
-    .ain-footer{
+
+    
+    .site-footer{
         position: fixed;
         background: #fff;
         top: 0;
@@ -1156,11 +1174,12 @@ form{
         }
           
     }
-
-    #footerbtn:checked + .main-footer{
+    .main-footer{
         transform: translateX(0);
-
+        transition: transform 0.5s ease-out;
     }
+
+   
     
 
 }
