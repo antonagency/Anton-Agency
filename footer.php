@@ -16,7 +16,7 @@
 		<img src="<?php echo get_template_directory_uri() ?>/img/marketing-digital-favicon.png" alt="<?php echo get_bloginfo( 'description' );?>"> Sobre la agencia
 	</button>
 	<footer id="mainFooter" class="site-footer">
-		<button onclick="removeFooter()"><i class="far fa-times-circle"></i></button
+		<button onclick="removeFooter()"><i class="far fa-times-circle"></i></button>
 
 		<div class="full-width polygon bg-grey-300 d-grid">
 			<div class="grid-container">
@@ -78,12 +78,5 @@
 
 	</footer><!-- #colophon -->
 </div><!-- #page -->
-
-<?php wp_footer(); 
-
-	wp_enqueue_script( 'script', plugins_url('js/navigation.js', __FILE__), array('jquery'));
-
-
-?>
 </body>
 </html>
