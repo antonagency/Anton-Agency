@@ -61,7 +61,17 @@ function anton_agency_widgets_init() {
 		'after_widget'  => '</section>',
 		'before_title'  => '<h3 class="widget-title">',
 		'after_title'   => '</h3>',
-    ) );
+		) );
+		
+		register_sidebar( array(
+			'name'          => esc_html__( 'Políticas Sidebar', 'anton-agency' ),
+			'id'            => 'polytics-sidebar',
+			'description'   => esc_html__( 'Add widgets here.', 'anton-agency' ),
+			'before_widget' => '<section id="%1$s" class="widget-section %2$s">',
+			'after_widget'  => '</section>',
+			'before_title'  => '<h3 class="widget-title">',
+			'after_title'   => '</h3>',
+			) );
     
 	
 
