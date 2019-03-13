@@ -15,9 +15,7 @@ get_header('blog');
 			
 			
 			<div class="row">
-				<div class="col-md-4">
-					<?php get_sidebar();?>
-				</div>
+				<?php get_sidebar();?>
 				<div class="col-md-8">
 					<header class="mb-5 archive-header">
 						<div class="row">
