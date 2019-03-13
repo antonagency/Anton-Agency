@@ -6,7 +6,7 @@
 <div class="container">
 	<div class="row d-flex align-items-center">
 		<div class="col-sm-1">
-			<a class="logo-navbar-brand" href="<?php echo site_url(); ?>"><img src="<?php echo esc_attr(get_option('logo-001')); ?>" alt="<?php the_title()?>"></a>
+			<a class="logo-navbar-brand" href="<?php echo site_url(); ?>"><img src="<?php echo get_template_directory_uri()?>/img/anton-logo-blog.svg" alt="<?php the_title()?>"></a>
 		</div>
 		<div class="col">
 			<nav class="navbar navbar-expand-md navbar-light" role="navigation">
