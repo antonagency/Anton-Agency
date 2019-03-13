@@ -119,16 +119,10 @@ add_action( 'wp_enqueue_scripts', 'anton_agency_scripts' );
 
 
 
-function load_custom_wp_admin_script() {
-	wp_enqueue_script('fields_dynamic', get_stylesheet_directory_uri() . '/js/fields_dynamic.js', array( 'jquery' ));
-	wp_enqueue_style( 'fields_dynamic' );
-}
-add_action( 'admin_enqueue_scripts', 'load_custom_wp_admin_script' );
-
-
 function anton_agency_scripts_theme_option() {
 	wp_enqueue_style('wp_theme_settings', get_template_directory_uri().'/css/wp_theme_settings.css');
 	wp_enqueue_script('wp_theme_settings',get_template_directory_uri() . '/js/wp_theme_settings.min.js', array('jquery'));
+	wp_enqueue_script('fields_dynamic', get_stylesheet_directory_uri() . '/js/fields_dynamic.js', array( 'jquery' ));
 }
 add_action( 'admin_enqueue_scripts', 'anton_agency_scripts_theme_option' );
 
@@ -186,6 +180,21 @@ function titulo_corto($after = '', $length) {
 	}
 	return $mytitle;
 }
+
+
+//Exclude pages from WordPress Search
+if (!is_admin()) {
+	function wpb_search_filter($query) {
+	if ($query->is_search) {
+	$query->set('post_type', 'post');
+	}
+	return $query;
+	}
+	add_filter('pre_get_posts','wpb_search_filter');
+	}
+
+
+
 /**
  * Theme Option.
  */

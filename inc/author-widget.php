@@ -52,7 +52,7 @@ class Listadodeautores_Widget extends WP_Widget {
         
         $users = get_users( $args );
         if( !empty( $users ) ) {
-            echo '<ul>';
+            echo '<ul class="author-widgets">';
             foreach( $users as $user ) {
                 echo '<li>';
                 echo '<a href="' . $user->user_url . '">' . get_avatar( $user->ID, 35 ) . '</a>';

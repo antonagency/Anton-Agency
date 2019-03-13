@@ -7,11 +7,39 @@
  * @package Anton_Agency
  */
 
-if ( ! is_active_sidebar( 'sidebar-1' ) ) {
-	return;
-}
-?>
 
-<aside id="secondary" class="widget-area">
-	<?php dynamic_sidebar( 'sidebar-1' ); ?>
-</aside><!-- #secondary -->
+ $sidebar_value = get_field('sidebar_selector_anton');
+ $column_value = '';
+
+ 
+
+
+
+
+
+	if(is_single()){
+		echo '<aside class="col-md-3">';
+			echo	'<div id="secondary" class="widget-area">';
+				 dynamic_sidebar( 'sidebar-1' ); 
+			echo	'</div>';
+		echo '</aside>';
+	}elseif(is_category()){
+		echo '<aside class="col-md-3">';
+			echo	'<div id="secondary" class="widget-area">';
+				dynamic_sidebar( 'sidebar-1' ); 
+			echo	'</div>';
+		echo '</aside>';
+	}else{
+		if($sidebar_value != 'no-sidebar'){
+			echo '<aside class="col-md-3">';
+				echo	'<div id="secondary" class="widget-area">';
+					dynamic_sidebar( $sidebar_value ); 
+				echo	'</div>';
+			echo '</aside>';
+		}
+	}
+
+
+
+
+

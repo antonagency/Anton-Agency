@@ -12,7 +12,7 @@ get_header('blog');
 
 	<div id="primary" class="container">
 		<div class="row">
-			<main id="main" class="col-md-8">
+			<main id="main" class="col">
 
 				<?php
 				while ( have_posts() ) :
@@ -33,13 +33,10 @@ get_header('blog');
 				?>
 
 			</main><!-- #main -->
-			<div class="col-sm-4">
-				<?php
+			<?php
 				get_sidebar();
 				 
-				?>
-			</div>
-		</div>
+			?>		</div>
 	</div><!-- #primary -->
 
 <?php

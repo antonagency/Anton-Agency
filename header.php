@@ -6,7 +6,7 @@
 	<div class="container">
 		<div class="row">
 			<div class="col-md-4 col-8">
-					<a class="navbar-brand" href="<?php echo site_url(); ?>"><img src="<?php echo esc_attr(get_option('logo-002')); ?>" alt="<?php the_title()?>"></a>
+					<a class="navbar-brand" href="<?php echo site_url(); ?>"><img id="main-blue-logo" src="<?php echo get_template_directory_uri()?>/img/anton-logo-white.svg" alt="<?php the_title()?>"></a>
 			</div>
 			<div class="col-md-8 col-4">
 				<nav class="navbar navbar-expand-md navbar-light nav-index" role="navigation">

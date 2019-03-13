@@ -11,28 +11,6 @@ $wpts = new wp_theme_settings(
         'settingFields' => array(),
 
         'tabs' => array(
-            'general' => array(
-                'text' => 'Configuración General', 
-                'dashicon' => 'dashicons-admin-generic',
-                'tabFields' => array(
-                    array(
-                        'type' => 'file', 
-                        'label' => 'Logo del blog', 
-                        'name' => 'logo-001',
-                        'class' => '',
-                        'preview' => false,
-                        'description' => ''
-                    ),
-                    array(
-                        'type' => 'file', 
-                        'label' => 'Logo Home', 
-                        'name' => 'logo-002',
-                        'class' => '',
-                        'preview' => false,
-                        'description' => ''
-                    ),
-                ),
-            ),
             'home' => array(
                 'text' => 'Portada', 
                 'dashicon' => 'dashicons-admin-generic',

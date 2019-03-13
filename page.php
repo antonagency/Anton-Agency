@@ -40,7 +40,7 @@ $header = array(
 </header>
 <div class="container mt-5 mb-5">
     <div class="row">
-        <main class="col-md-9">
+        <main class="col">
                 <?php
                     while ( have_posts() ) :
                         the_post();
@@ -55,7 +55,7 @@ $header = array(
                     endwhile; // End of the loop.
                 ?>
         </main>
-        <aside class="col-md-3"><?php get_sidebar();?></aside>
+        <?php get_sidebar();?>
     </div>
 </div>
 

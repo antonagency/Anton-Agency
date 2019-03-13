@@ -16,10 +16,10 @@ get_header('blog');
         <div class="col-md-12 mb-5">
                 <?php get_template_part( 'template-parts/guide-post', get_post_type() ); ?>
             </div>
-        <div class="col-md-4">
-            <?php get_sidebar();?>
-        </div>
-        <div class="col-md-8">
+
+        <?php get_sidebar();?>
+
+        <div class="col">
             <?php
 
 
@@ -41,7 +41,7 @@ get_header('blog');
                 { 
                     echo '<div class="w-100 mb-5">';
 
-                        echo '<div class="w-100 mb-3"><h3 class=""><a href="' . get_category_link( $category->term_id ) . '" title="' . sprintf( __( "View all posts in %s" ), $category->name ) . '" ' . '>' . $category->name. '</a></h3><p class="minimal_text">Desliza a la izquierda</p></div>';
+                        echo '<div class="w-100 mb-3"><h3 class=""><a href="' . get_category_link( $category->term_id ) . '" title="' . sprintf( __( "View all posts in %s" ), $category->name ) . '" ' . '>' . $category->name. '</a></h3></div>';
                         
                         echo '<div class="row">';
                             $args=array(

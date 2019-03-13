@@ -77,17 +77,15 @@ get_header();
                 {
 
                     echo '<div class="col-sm-3 mb-5">';
-                        echo '<a href="' . esc_attr(get_option($value4)) . '">';
                             echo '<div class="row">';
                                 echo '<div class="col-4">';
                                     echo '<img src="' . esc_attr(get_option($value1))  . '" alt="' . esc_attr(get_option($value2))  . '">';
                                 echo '</div>';
                                 echo '<div class="col-8">';
-                                    echo '<h3 class="entry_title_04">' . esc_attr(get_option($value2)) . '</h3>';
-                                    echo '<p>' . esc_attr(get_option($value3))  . '</p>';
+                                    echo '<a href="' . esc_attr(get_option($value4)) . '"><h3 class="entry_title_04">' . esc_attr(get_option($value2)) . '</h3></a>';
+                                    echo '<p><a href="' . esc_attr(get_option($value4)) . '">' . esc_attr(get_option($value3))  . '</a></p>';
                                 echo '</div>';
                             echo '</div>';
-                        echo '</a>';
                     echo '</div>';
 
 
