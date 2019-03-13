@@ -582,11 +582,11 @@ $wpts = new wp_theme_settings(
                             ),
                             array(
                                 'type' => 'file', 
-                                'label' => 'Logo cliente Destacado 02', 
+                                'label' => 'Logo cliente 02', 
                                 'name' => 'client-103',
                                 'class' => '',
                                 'preview' => false,
-                                'description' => 'Este cliente muestra video y texto'
+                                'description' => ''
                             ),
                             array(
                                 'type' => 'file', 
@@ -605,25 +605,26 @@ $wpts = new wp_theme_settings(
                                 'description' => ''
                             ),
                             array(
-                                'type' => 'text', 
-                                'label' => 'Texto Cliente Destacado',
-                                'name' => 'client-106' ,
+                                'type' => 'file', 
+                                'label' => 'Cover del video', 
+                                'name' => 'client-106',
                                 'class' => '',
-                                'description' => '',
-                                //'tooltip' => ''
+                                'preview' => false,
+                                'description' => ''
                             ),
                             array(
                                 'type' => 'text', 
                                 'label' => 'ID del video Destacado',
-                                'name' => 'client-118' ,
+                                'name' => 'client-107' ,
                                 'class' => '',
                                 'description' => '',
                                 //'tooltip' => ''
                             ),
+                           
                               array(
                                 'type' => 'file', 
                                 'label' => 'Foto Testimonio cliente 01', 
-                                'name' => 'cliente-testimonio-1',
+                                'name' => 'client-108',
                                 'class' => '',
                                 'preview' => false,
                                 'description' => '',
@@ -631,7 +632,7 @@ $wpts = new wp_theme_settings(
                             array(
                                 'type' => 'text', 
                                 'label' => 'Testimonio 1',
-                                'name' => 'client-116' ,
+                                'name' => 'client-109' ,
                                 'class' => '',
                                 'description' => '',
                                 //'tooltip' => ''
@@ -639,7 +640,7 @@ $wpts = new wp_theme_settings(
                              array(
                                 'type' => 'text', 
                                 'label' => 'Persona Testimonio 1',
-                                'name' => 'client-115' ,
+                                'name' => 'client-110' ,
                                 'class' => '',
                                 'description' => '',
                                 //'tooltip' => ''
@@ -655,7 +656,7 @@ $wpts = new wp_theme_settings(
                             array(
                                 'type' => 'text', 
                                 'label' => 'Testimonio 2',
-                                'name' => 'client-113' ,
+                                'name' => 'client-111' ,
                                 'class' => '',
                                 'description' => '',
                                 //'tooltip' => ''
