@@ -308,103 +308,6 @@ div#toc_container {
     display: none;
 }
 
-.widget-area{
-    position: sticky;
-    top: 100px;
-    
-}
-.widget-section{
-    margin-bottom: 4%;
-    
-    ul,
-    ol{
-        margin: 0;
-        padding: 0;
-    }
-    li{
-        position: relative;
-        display: block;
-        padding: .75rem 1.25rem;
-        margin-bottom: -1px;
-        background-color: #fff;
-        display: grid;
-        justify-content: space-between;
-        grid-template-columns: auto auto;
-    }
-    a{
-        color: #767575;
-    }
-    .widget-title{
-        font-size: 17px;
-        background: #fff;
-        padding: 10px 15px;
-        margin: 0;
-        text-transform: uppercase;
-        letter-spacing: 1px;
-        border-bottom: 1px solid #f2f2f2;
-    }
-}
-.widget_listadodeautores_widget{
-    li{
-        justify-content: left;
-        column-gap: 10px;
-        align-items: center;
-    }
-    img{
-        border-radius: 100%;
-    }
-}
-.sidebar-call-to-action{
-    border: 1px solid #f2f2f2;
-    border-radius: 8px;
-    overflow: hidden;
-    text-align: center;
-div{
-    padding: 15px;
-    
-}
-h3{
-    font-weight: 900;
-    color: var(--red-color);
-    font-size: 20px;
-}
-h4{
-    color: #595959;
-    font-size: 220%;
-    font-weight: 800;
-    margin: 25px 0px;
-    font-size: 27px;
-    text-align: center;
-}
-ul{
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    padding-left: 15px;
-    margin-top: 15px;
-    color: var(--grey-400);
-    text-align: left;
-}
-li{
-    display: block;
-    padding: 0;
-}
-svg{
-    margin-right: 10px;
-    color: var(--blue-100)
-}
-img{
-    max-width: 100%;
-}
-a{
-    display: block;
-    position: absolute;
-    left: 15%;
-    bottom: -26px;
-    color: #fff
-}
-
-}
 .main-home-header{
     clip-path: polygon(0 0, 100% 0, 100% 76%, 0 100%);
     margin-bottom: 25px;
@@ -644,6 +547,7 @@ input[type=submit]{
     left: 0;
     z-index: 999;
     width: 100%;
+    transition: all .3s ease-in;
 }
 .navbar-blue-menu{
     .nav-link{
@@ -736,6 +640,7 @@ input[type=submit]{
     background: #fff;
     border-bottom: var(--border-300);
     padding: 10px 0;
+    transition: all .3s ease-in;
 
     .navbar-brand img {
         height: 35px;
@@ -775,10 +680,12 @@ input[type=submit]{
     h1{
         color: #fff;
         margin-bottom: 15px;
+        font-weight: 200;
     }
     h3{
         color: var(--blue-100);
         font-size: 20px;
+        line-height: 28px;
     }
 }
 .main-article{
@@ -1007,30 +914,141 @@ form{
 }
 /*
 //////////////////////////////////////////////////////////////////////////////////////////////
-                    FOOTER
+                    WIDGETS
 //////////////////////////////////////////////////////////////////////////////////////////////
 */
 
 
-
-.footer-widget{
-
-    ul{
-        margin: 0;
-        padding: 0;
-        list-style: none;
-    }
-    .widget-title{
+.footer-widget ul,
+.widget-section ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.footer-widget .widget-title,
+.widget-section .widget-title{
         color: var(--blue-400);
         font-weight: 600;
         font-size: 18px;
+        margin-bottom: 15px;
+}
+
+.widget-section{
+    margin-bottom: 30px;
+    ul{
+        border: var(--border-300);
+
+        a{
+            padding: 5px 15px;
+            display: block;
+
+           
+        }
+
+        .current-menu-item{
+            a{
+                background: var(--blue-400);
+                color: #fff;
+            }
+        }
     }
+}
+.widget-area{
+    position: sticky;
+    top: 100px;
+    
+}
+.author-widgets{
+    
+    li{
+        position: relative;
+        display: block;
+        padding: 15px;
+        background-color: #fff;
+        display: grid;
+        justify-content: space-between;
+        grid-template-columns: auto auto;
+        a{
+            color: #767575;
+            padding: 0;
+        }
+    }
+    
+}
+
+.widget_listadodeautores_widget{
+    li{
+        justify-content: left;
+        column-gap: 10px;
+        align-items: center;
+    }
+    img{
+        border-radius: 100%;
+    }
+}
+
+
+.footer-widget{
     p{
         font-size: 16px;
         color: var(--grey-400);
         margin-top: 0;
     }
 }
+
+.sidebar-call-to-action{
+    border: 1px solid #f2f2f2;
+    border-radius: 8px;
+    overflow: hidden;
+    text-align: center;
+div{
+    padding: 15px;
+    
+}
+h3{
+    font-weight: 900;
+    color: var(--red-color);
+    font-size: 20px;
+}
+h4{
+    color: #595959;
+    font-size: 220%;
+    font-weight: 800;
+    margin: 25px 0px;
+    font-size: 27px;
+    text-align: center;
+}
+ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    padding-left: 15px;
+    margin-top: 15px;
+    color: var(--grey-400);
+    text-align: left;
+    border: none;
+}
+li{
+    display: block;
+    padding: 0;
+}
+svg{
+    margin-right: 10px;
+    color: var(--blue-100)
+}
+img{
+    max-width: 100%;
+}
+a{
+    display: block;
+    position: absolute;
+    left: 15%;
+    bottom: -26px;
+    color: #fff
+}
+
+}
+
 /*
 //////////////////////////////////////////////////////////////////////////////////////////////
                     SINGLE POST
