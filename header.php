@@ -9,8 +9,8 @@
 					<a class="navbar-brand" href="<?php echo site_url(); ?>"><img id="main-blue-logo" src="<?php echo get_template_directory_uri()?>/img/anton-logo-white.svg" alt="<?php the_title()?>"></a>
 			</div>
 			<div class="col-md-8 col-4">
-				<nav class="navbar navbar-expand-md navbar-light nav-index" role="navigation">
-					<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#bs4navbar" aria-controls="bs4navbar" aria-expanded="false" aria-label="Toggle navigation">
+				<nav class="navbar navbar-expand-md justify-content-end navbar-light nav-index" role="navigation">
+					<button class="navbar-toggler" onclick="getMenu()">
 						<span class="navbar-toggler-icon"></span>
 					</button>
 					<?php
@@ -19,7 +19,7 @@
 						'theme_location'  => 'menu-1',
 						'container'       => 'div',
 						'container_id'    => 'bs4navbar',
-						'container_class' => 'collapse navbar-collapse justify-content-end',
+						'container_class' => 'justify-content-end bs4navbar',
 						'menu_id'         => false,
 						'menu_class'      => 'navbar-nav navbar-blue-menu mb-auto',
 						'depth'           => 2,

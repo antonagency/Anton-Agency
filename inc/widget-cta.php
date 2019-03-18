@@ -82,7 +82,12 @@ class Ctawidget_Widget extends WP_Widget {
                 <h4><?php echo $cta_tel;?></h4>
                 <a href="<?php echo $cta_texturl;?>" rel="nofollow" class="btn-orange"><?php echo $cta_textbtn;?></a>
             </div>
-        </div>
+		</div>
+		
+		<div class="movil-cta-widget">
+			<a href="tel:<?php echo $cta_tel;?>" class="btn-white">Llamar</a>
+			<a href="<?php echo $cta_texturl;?>" rel="nofollow" class="btn-orange"><?php echo $cta_textbtn;?></a>
+		</div>
 
         <?php
 		

@@ -41,7 +41,7 @@ get_header('blog');
                 { 
                     echo '<div class="w-100 mb-5">';
 
-                        echo '<div class="w-100 mb-3"><h3 class=""><a href="' . get_category_link( $category->term_id ) . '" title="' . sprintf( __( "View all posts in %s" ), $category->name ) . '" ' . '>' . $category->name. '</a></h3></div>';
+                        echo '<div class="w-100 mb-3"><h3><a  class="widget-title" href="' . get_category_link( $category->term_id ) . '" title="' . sprintf( __( "View all posts in %s" ), $category->name ) . '" ' . '>' . $category->name. '</a></h3></div>';
                         
                         echo '<div class="row">';
                             $args=array(

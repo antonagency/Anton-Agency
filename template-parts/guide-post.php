@@ -22,7 +22,7 @@
 
     //loop through query
     if($guidePosts->have_posts()){
-        echo '<div class="row">';
+        echo '<div class="row movil-carrousel">';
         while($guidePosts->have_posts()){ 
             $guidePosts->the_post();
                 

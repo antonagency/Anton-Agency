@@ -62,3 +62,20 @@ function removeFooter(){
 // });
 
 
+function getMenu(){
+    var getMenu = document.getElementById('bs4navbar');
+    getMenu.classList.add('movil-menu');
+
+    var str = '<button class="navbar-toggler movil-menu-btn" id="getButton" onclick="removeMenu()"><i class="fas fa-times"></i></button>';
+    var getButton = document.getElementById('bs4navbar');
+    getButton.insertAdjacentHTML('beforeend', str)
+}
+
+function removeMenu(){
+    var removeMenu = document.getElementById('bs4navbar');
+    removeMenu.classList.remove('movil-menu');
+
+    var getButtonParent = document.getElementById("bs4navbar");
+    var getButtonchild = document.getElementById("getButton");
+    getButtonParent.removeChild(getButtonchild);
+}

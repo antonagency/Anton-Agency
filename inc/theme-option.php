@@ -37,8 +37,24 @@ $wpts = new wp_theme_settings(
                             ),
                             array(
                                 'type' => 'text', 
-                                'label' => 'Descripción',
+                                'label' => 'Título Secundario',
                                 'name' => 'sf-102' ,
+                                'class' => '',
+                                'description' => '',
+                                //'tooltip' => ''
+                            ),
+                            array(
+                                'type' => 'text', 
+                                'label' => 'Descripción',
+                                'name' => 'sf-103' ,
+                                'class' => '',
+                                'description' => '',
+                                //'tooltip' => ''
+                            ),
+                            array(
+                                'type' => 'text', 
+                                'label' => 'Texto introducción a los bloques',
+                                'name' => 'sf-104' ,
                                 'class' => '',
                                 'description' => '',
                                 //'tooltip' => ''
@@ -648,7 +664,7 @@ $wpts = new wp_theme_settings(
                               array(
                                 'type' => 'file', 
                                 'label' => 'Foto Testimonio  cliente 2',
-                                'name' => 'cliente-testimonio-2' ,
+                                'name' => 'client-111' ,
                                 'class' => '',
                                 'description' => '',
                                 //'tooltip' => ''
@@ -656,7 +672,7 @@ $wpts = new wp_theme_settings(
                             array(
                                 'type' => 'text', 
                                 'label' => 'Testimonio 2',
-                                'name' => 'client-111' ,
+                                'name' => 'client-112' ,
                                 'class' => '',
                                 'description' => '',
                                 //'tooltip' => ''
@@ -664,7 +680,7 @@ $wpts = new wp_theme_settings(
                              array(
                                 'type' => 'text', 
                                 'label' => 'Persona Testimonio 2',
-                                'name' => 'client-112' ,
+                                'name' => 'client-113' ,
                                 'class' => '',
                                 'description' => '',
                                 //'tooltip' => ''

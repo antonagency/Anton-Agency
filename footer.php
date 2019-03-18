@@ -15,9 +15,29 @@
 	<button class="footer-btn" onclick="getFooter()">	
 		<img src="<?php echo get_template_directory_uri() ?>/img/marketing-digital-favicon.png" alt="<?php echo get_bloginfo( 'description' );?>"> Sobre la agencia
 	</button>
+	<?php
+		if(is_front_page()){
+
+		}else{
+			?>
+				<div class="container">
+					<div class="row">
+						<div class="col d-flex justify-content-center">
+						<?php
+							if(function_exists("kk_star_ratings")) : echo kk_star_ratings($pid); endif;
+						?>
+						</div>
+					</div>
+				</div>
+			<?php
+
+
+		}
+	?>
+
 	<footer id="mainFooter" class="site-footer">
 		<button class="clouse-footer-btn" onclick="removeFooter()"><i class="far fa-times-circle"></i></button>
-
+		
 		<div class="full-width polygon bg-grey-300 d-grid">
 			<div class="grid-container">
 				<ul class="footer-social-list">
