@@ -34,10 +34,10 @@ function createSticky(sticky) {
 
             if( win.scrollTop() > pos ) {
                 sticky.addClass("custom-sticky");
-                jQuery("#main-blue-logo").attr("src","https://www.proyectos.anton.agency/wp-content/themes/anton-agency/img/anton-logo-blue.svg");
+                jQuery("#main-blue-logo").attr("src","https://anton.agency/wp-content/themes/anton-agency/img/anton-logo-blue.svg");
             } else {
                 sticky.removeClass("custom-sticky");
-                jQuery("#main-blue-logo").attr("src","https://www.proyectos.anton.agency/wp-content/themes/anton-agency/img/anton-logo-white.svg");
+                jQuery("#main-blue-logo").attr("src","https://anton.agency/wp-content/themes/anton-agency/img/anton-logo-white.svg");
             }           
         });         
     }

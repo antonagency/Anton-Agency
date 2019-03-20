@@ -98,5 +98,16 @@
 
 	</footer><!-- #colophon -->
 </div><!-- #page -->
+<link href="https://fonts.googleapis.com/css?family=Hind:300,400,500,600,700|Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+	<script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+	
+<!-- Google Analytics scripts -->
+<script src="https://cdn.jsdelivr.net/ga-lite/latest/ga-lite.min.js" async></script>
+	<script>
+	var galite = galite || {};
+	galite.UA = "UA-99595338-1"; // Insert your tracking code here
+</script>
+
+
 </body>
 </html>

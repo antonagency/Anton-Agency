@@ -900,6 +900,10 @@ input[type=submit] {
   color: var(--grey-400) !important;
 }
 
+.dropdown-menu.show {
+  left: -100%;
+}
+
 @media (max-width: 768px) {
   .movil-menu-btn {
     position: absolute;
